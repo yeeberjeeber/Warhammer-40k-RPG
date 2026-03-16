@@ -1,0 +1,3 @@
+/home/oyashi/Aloysius/warhammer-rpg/build/CMakeFiles/warhammer.dir
+/home/oyashi/Aloysius/warhammer-rpg/build/CMakeFiles/edit_cache.dir
+/home/oyashi/Aloysius/warhammer-rpg/build/CMakeFiles/rebuild_cache.dir
