@@ -5,17 +5,23 @@
 
 class HP {
 private:
-    hptype Armor;
-    hptype CurrentHealth;
-    hptype MaxHealth;
+    ui16 Armor;
+    ui16 CurrentHealth;
+    ui16 MaxHealth;
 
 public:
-    bool setMaxHP(hptype newMaxHP) {}
-    void takeDamage(hptype Damage) {}
-    void heal(hptype Amount) {}
+    // default constructor
+    HP();
+
+    // overloaded constructor
+    HP(ui16 armor, ui16 cHP, ui16 mHP);
+
+    bool setMaxHP(ui16 newMaxHP) {}
+    void takeDamage(ui16 Damage) {}
+    void heal(ui16 Amount) {}
 
     // getters
-    hptype getMaxHP() const { return MaxHealth; }
-    hptype getCurrentHP() const { return CurrentHealth; }
-    hptype getArmor() const { return Armor; }
+    ui16 getMaxHP() const { return MaxHealth; }
+    ui16 getCurrentHP() const { return CurrentHealth; }
+    ui16 getArmor() const { return Armor; }
 };

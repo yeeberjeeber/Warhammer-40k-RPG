@@ -4,32 +4,29 @@
 #include <memory>
 #include "items/item.h"
 #include "player/player.h"
+#include "utility/types.h"
 using namespace std;
 
+Player::Player() : health(), faith(), stats() {};
 
-Player::Player(const string& name, int health, int armor, int faith, int level) : name(name), health(health), armor(armor), faith(faith), level(level) {}
+Player::Player(const string& name, ui8 cHealth, ui8 mHealth, ui8 armor, ui8 cFaith, ui8 mFaith, int level) : name(name), health(armor, cHealth, mHealth), faith(mFaith, cFaith), level(level) {}
 
-Player::attack(Enemy& enemy) {
+void Player::attack(Enemy& enemy) {
         
 }
 
-Player::takeDamage(int dmg) {
+void Player::takeDamage(int dmg) {
         
 }
 
-Player::useItem() {
+void Player::useItem() {
 
 }
 
-activateAbility() {
+void activateAbility() {
 
 }
 
-displayStatus() {
-    return name;
-    return health;
-    return armor;
-    return faith;
-    return level;
-    return inventory;
+void levelUp(ui8 exp) {
+
 }
