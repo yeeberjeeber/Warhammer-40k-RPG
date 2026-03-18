@@ -129,29 +129,125 @@ warhammer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/build
 .PHONY : warhammer/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/player/player.o: src/player/player.cpp.o
+.PHONY : src/player/player.o
+
+# target to build an object file
+src/player/player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/player/player.cpp.o
+.PHONY : src/player/player.cpp.o
+
+src/player/player.i: src/player/player.cpp.i
+.PHONY : src/player/player.i
+
+# target to preprocess a source file
+src/player/player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/player/player.cpp.i
+.PHONY : src/player/player.cpp.i
+
+src/player/player.s: src/player/player.cpp.s
+.PHONY : src/player/player.s
+
+# target to generate assembly for a file
+src/player/player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/player/player.cpp.s
+.PHONY : src/player/player.cpp.s
+
+src/utility/faith.o: src/utility/faith.cpp.o
+.PHONY : src/utility/faith.o
+
+# target to build an object file
+src/utility/faith.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/utility/faith.cpp.o
+.PHONY : src/utility/faith.cpp.o
+
+src/utility/faith.i: src/utility/faith.cpp.i
+.PHONY : src/utility/faith.i
+
+# target to preprocess a source file
+src/utility/faith.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/utility/faith.cpp.i
+.PHONY : src/utility/faith.cpp.i
+
+src/utility/faith.s: src/utility/faith.cpp.s
+.PHONY : src/utility/faith.s
+
+# target to generate assembly for a file
+src/utility/faith.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/utility/faith.cpp.s
+.PHONY : src/utility/faith.cpp.s
+
+src/utility/hp.o: src/utility/hp.cpp.o
+.PHONY : src/utility/hp.o
+
+# target to build an object file
+src/utility/hp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/utility/hp.cpp.o
+.PHONY : src/utility/hp.cpp.o
+
+src/utility/hp.i: src/utility/hp.cpp.i
+.PHONY : src/utility/hp.i
+
+# target to preprocess a source file
+src/utility/hp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/utility/hp.cpp.i
+.PHONY : src/utility/hp.cpp.i
+
+src/utility/hp.s: src/utility/hp.cpp.s
+.PHONY : src/utility/hp.s
+
+# target to generate assembly for a file
+src/utility/hp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/utility/hp.cpp.s
+.PHONY : src/utility/hp.cpp.s
+
+src/utility/levelling.o: src/utility/levelling.cpp.o
+.PHONY : src/utility/levelling.o
+
+# target to build an object file
+src/utility/levelling.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/utility/levelling.cpp.o
+.PHONY : src/utility/levelling.cpp.o
+
+src/utility/levelling.i: src/utility/levelling.cpp.i
+.PHONY : src/utility/levelling.i
+
+# target to preprocess a source file
+src/utility/levelling.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/utility/levelling.cpp.i
+.PHONY : src/utility/levelling.cpp.i
+
+src/utility/levelling.s: src/utility/levelling.cpp.s
+.PHONY : src/utility/levelling.s
+
+# target to generate assembly for a file
+src/utility/levelling.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/utility/levelling.cpp.s
+.PHONY : src/utility/levelling.cpp.s
 
 # Help Target
 help:
@@ -162,9 +258,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... warhammer"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/player/player.o"
+	@echo "... src/player/player.i"
+	@echo "... src/player/player.s"
+	@echo "... src/utility/faith.o"
+	@echo "... src/utility/faith.i"
+	@echo "... src/utility/faith.s"
+	@echo "... src/utility/hp.o"
+	@echo "... src/utility/hp.i"
+	@echo "... src/utility/hp.s"
+	@echo "... src/utility/levelling.o"
+	@echo "... src/utility/levelling.i"
+	@echo "... src/utility/levelling.s"
 .PHONY : help
 
 

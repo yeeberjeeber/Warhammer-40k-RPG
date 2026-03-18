@@ -5,7 +5,6 @@ class Levelling {
 
 protected:
     ui8 CurrentLevel;
-    ui8 MaxLevel;
     ui16 CurrentEXP;
     ui16 MaxEXP;
     ui16 EXPCap;
@@ -15,16 +14,16 @@ protected:
     static const ui16 EXPCapAt1 = 100;
     static const ui8 MaxLevel = 99;
 
-    ui16 EXPBarCalc(const ui8& cLevel) {}
+    ui16 EXPBarCalc(const ui8& cLevel);
 
-    void checkLevelUp(const ui16& cEXP) {}
+    void checkLevelUp(const ui16& cEXP);
 
 public:
     Levelling();
 
-    Levelling(ui8 cLevel, ui16 cEXP) {}
+    Levelling(ui8 cLevel, ui16 cEXP);
 
-    void gainEXP(ui16 gainedEXP) {}
+    void gainEXP(ui16 gainedEXP);
 
     ui8 getCurrentLevel() { return CurrentLevel; }
     ui16 getCurrentEXP() { return CurrentEXP; }

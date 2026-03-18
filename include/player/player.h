@@ -20,14 +20,14 @@ private:
     Levelling level;
 
 public:
-    Player() : health(), faith(), stats(), level() {};
-    Player(const string& name, ui8 cHealth, ui8 mHealth, ui8 armor, ui8 cFaith, ui8 mFaith, ui8 cLevel, ui16 cEXP) {};
+    Player();
+    Player(const string& name, ui8 cHealth, ui8 mHealth, ui8 armor, ui8 cFaith, ui8 mFaith, ui8 cLevel, ui16 cEXP);
 
-    void attack(Enemy& enemy) {};
-    void takeDamage(ui16 dmg) {};
-    void useItem() {};
-    void activateAbility() {};
-    void calcEXP(ui16 gainedEXP) {};
+    // void attack(Enemy& enemy) {};
+    void takeDamage(ui16 dmg);
+    void useItem();
+    void activateAbility();
+    void calcEXP(ui16 gainedEXP);
 
     void displayStatus() {
         cout << "Name: " << name << endl;

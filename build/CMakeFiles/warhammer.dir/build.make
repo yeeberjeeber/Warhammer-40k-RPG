@@ -69,31 +69,95 @@ include CMakeFiles/warhammer.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/warhammer.dir/flags.make
 
-CMakeFiles/warhammer.dir/main.cpp.o: CMakeFiles/warhammer.dir/flags.make
-CMakeFiles/warhammer.dir/main.cpp.o: /home/oyashi/Aloysius/warhammer-rpg/main.cpp
-CMakeFiles/warhammer.dir/main.cpp.o: CMakeFiles/warhammer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/oyashi/Aloysius/warhammer-rpg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/warhammer.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/warhammer.dir/main.cpp.o -MF CMakeFiles/warhammer.dir/main.cpp.o.d -o CMakeFiles/warhammer.dir/main.cpp.o -c /home/oyashi/Aloysius/warhammer-rpg/main.cpp
+CMakeFiles/warhammer.dir/src/main.cpp.o: CMakeFiles/warhammer.dir/flags.make
+CMakeFiles/warhammer.dir/src/main.cpp.o: /home/oyashi/Aloysius/warhammer-rpg/src/main.cpp
+CMakeFiles/warhammer.dir/src/main.cpp.o: CMakeFiles/warhammer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/oyashi/Aloysius/warhammer-rpg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/warhammer.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/warhammer.dir/src/main.cpp.o -MF CMakeFiles/warhammer.dir/src/main.cpp.o.d -o CMakeFiles/warhammer.dir/src/main.cpp.o -c /home/oyashi/Aloysius/warhammer-rpg/src/main.cpp
 
-CMakeFiles/warhammer.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/warhammer.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oyashi/Aloysius/warhammer-rpg/main.cpp > CMakeFiles/warhammer.dir/main.cpp.i
+CMakeFiles/warhammer.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/warhammer.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oyashi/Aloysius/warhammer-rpg/src/main.cpp > CMakeFiles/warhammer.dir/src/main.cpp.i
 
-CMakeFiles/warhammer.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/warhammer.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oyashi/Aloysius/warhammer-rpg/main.cpp -o CMakeFiles/warhammer.dir/main.cpp.s
+CMakeFiles/warhammer.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/warhammer.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oyashi/Aloysius/warhammer-rpg/src/main.cpp -o CMakeFiles/warhammer.dir/src/main.cpp.s
+
+CMakeFiles/warhammer.dir/src/player/player.cpp.o: CMakeFiles/warhammer.dir/flags.make
+CMakeFiles/warhammer.dir/src/player/player.cpp.o: /home/oyashi/Aloysius/warhammer-rpg/src/player/player.cpp
+CMakeFiles/warhammer.dir/src/player/player.cpp.o: CMakeFiles/warhammer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/oyashi/Aloysius/warhammer-rpg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/warhammer.dir/src/player/player.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/warhammer.dir/src/player/player.cpp.o -MF CMakeFiles/warhammer.dir/src/player/player.cpp.o.d -o CMakeFiles/warhammer.dir/src/player/player.cpp.o -c /home/oyashi/Aloysius/warhammer-rpg/src/player/player.cpp
+
+CMakeFiles/warhammer.dir/src/player/player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/warhammer.dir/src/player/player.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oyashi/Aloysius/warhammer-rpg/src/player/player.cpp > CMakeFiles/warhammer.dir/src/player/player.cpp.i
+
+CMakeFiles/warhammer.dir/src/player/player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/warhammer.dir/src/player/player.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oyashi/Aloysius/warhammer-rpg/src/player/player.cpp -o CMakeFiles/warhammer.dir/src/player/player.cpp.s
+
+CMakeFiles/warhammer.dir/src/utility/faith.cpp.o: CMakeFiles/warhammer.dir/flags.make
+CMakeFiles/warhammer.dir/src/utility/faith.cpp.o: /home/oyashi/Aloysius/warhammer-rpg/src/utility/faith.cpp
+CMakeFiles/warhammer.dir/src/utility/faith.cpp.o: CMakeFiles/warhammer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/oyashi/Aloysius/warhammer-rpg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/warhammer.dir/src/utility/faith.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/warhammer.dir/src/utility/faith.cpp.o -MF CMakeFiles/warhammer.dir/src/utility/faith.cpp.o.d -o CMakeFiles/warhammer.dir/src/utility/faith.cpp.o -c /home/oyashi/Aloysius/warhammer-rpg/src/utility/faith.cpp
+
+CMakeFiles/warhammer.dir/src/utility/faith.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/warhammer.dir/src/utility/faith.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oyashi/Aloysius/warhammer-rpg/src/utility/faith.cpp > CMakeFiles/warhammer.dir/src/utility/faith.cpp.i
+
+CMakeFiles/warhammer.dir/src/utility/faith.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/warhammer.dir/src/utility/faith.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oyashi/Aloysius/warhammer-rpg/src/utility/faith.cpp -o CMakeFiles/warhammer.dir/src/utility/faith.cpp.s
+
+CMakeFiles/warhammer.dir/src/utility/hp.cpp.o: CMakeFiles/warhammer.dir/flags.make
+CMakeFiles/warhammer.dir/src/utility/hp.cpp.o: /home/oyashi/Aloysius/warhammer-rpg/src/utility/hp.cpp
+CMakeFiles/warhammer.dir/src/utility/hp.cpp.o: CMakeFiles/warhammer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/oyashi/Aloysius/warhammer-rpg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/warhammer.dir/src/utility/hp.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/warhammer.dir/src/utility/hp.cpp.o -MF CMakeFiles/warhammer.dir/src/utility/hp.cpp.o.d -o CMakeFiles/warhammer.dir/src/utility/hp.cpp.o -c /home/oyashi/Aloysius/warhammer-rpg/src/utility/hp.cpp
+
+CMakeFiles/warhammer.dir/src/utility/hp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/warhammer.dir/src/utility/hp.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oyashi/Aloysius/warhammer-rpg/src/utility/hp.cpp > CMakeFiles/warhammer.dir/src/utility/hp.cpp.i
+
+CMakeFiles/warhammer.dir/src/utility/hp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/warhammer.dir/src/utility/hp.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oyashi/Aloysius/warhammer-rpg/src/utility/hp.cpp -o CMakeFiles/warhammer.dir/src/utility/hp.cpp.s
+
+CMakeFiles/warhammer.dir/src/utility/levelling.cpp.o: CMakeFiles/warhammer.dir/flags.make
+CMakeFiles/warhammer.dir/src/utility/levelling.cpp.o: /home/oyashi/Aloysius/warhammer-rpg/src/utility/levelling.cpp
+CMakeFiles/warhammer.dir/src/utility/levelling.cpp.o: CMakeFiles/warhammer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/oyashi/Aloysius/warhammer-rpg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/warhammer.dir/src/utility/levelling.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/warhammer.dir/src/utility/levelling.cpp.o -MF CMakeFiles/warhammer.dir/src/utility/levelling.cpp.o.d -o CMakeFiles/warhammer.dir/src/utility/levelling.cpp.o -c /home/oyashi/Aloysius/warhammer-rpg/src/utility/levelling.cpp
+
+CMakeFiles/warhammer.dir/src/utility/levelling.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/warhammer.dir/src/utility/levelling.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oyashi/Aloysius/warhammer-rpg/src/utility/levelling.cpp > CMakeFiles/warhammer.dir/src/utility/levelling.cpp.i
+
+CMakeFiles/warhammer.dir/src/utility/levelling.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/warhammer.dir/src/utility/levelling.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oyashi/Aloysius/warhammer-rpg/src/utility/levelling.cpp -o CMakeFiles/warhammer.dir/src/utility/levelling.cpp.s
 
 # Object files for target warhammer
 warhammer_OBJECTS = \
-"CMakeFiles/warhammer.dir/main.cpp.o"
+"CMakeFiles/warhammer.dir/src/main.cpp.o" \
+"CMakeFiles/warhammer.dir/src/player/player.cpp.o" \
+"CMakeFiles/warhammer.dir/src/utility/faith.cpp.o" \
+"CMakeFiles/warhammer.dir/src/utility/hp.cpp.o" \
+"CMakeFiles/warhammer.dir/src/utility/levelling.cpp.o"
 
 # External object files for target warhammer
 warhammer_EXTERNAL_OBJECTS =
 
-warhammer: CMakeFiles/warhammer.dir/main.cpp.o
+warhammer: CMakeFiles/warhammer.dir/src/main.cpp.o
+warhammer: CMakeFiles/warhammer.dir/src/player/player.cpp.o
+warhammer: CMakeFiles/warhammer.dir/src/utility/faith.cpp.o
+warhammer: CMakeFiles/warhammer.dir/src/utility/hp.cpp.o
+warhammer: CMakeFiles/warhammer.dir/src/utility/levelling.cpp.o
 warhammer: CMakeFiles/warhammer.dir/build.make
 warhammer: CMakeFiles/warhammer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/oyashi/Aloysius/warhammer-rpg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable warhammer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/oyashi/Aloysius/warhammer-rpg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable warhammer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/warhammer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

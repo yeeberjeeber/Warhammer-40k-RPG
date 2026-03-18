@@ -1,6 +1,14 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/warhammer.dir/main.cpp.o"
-  "CMakeFiles/warhammer.dir/main.cpp.o.d"
+  "CMakeFiles/warhammer.dir/src/main.cpp.o"
+  "CMakeFiles/warhammer.dir/src/main.cpp.o.d"
+  "CMakeFiles/warhammer.dir/src/player/player.cpp.o"
+  "CMakeFiles/warhammer.dir/src/player/player.cpp.o.d"
+  "CMakeFiles/warhammer.dir/src/utility/faith.cpp.o"
+  "CMakeFiles/warhammer.dir/src/utility/faith.cpp.o.d"
+  "CMakeFiles/warhammer.dir/src/utility/hp.cpp.o"
+  "CMakeFiles/warhammer.dir/src/utility/hp.cpp.o.d"
+  "CMakeFiles/warhammer.dir/src/utility/levelling.cpp.o"
+  "CMakeFiles/warhammer.dir/src/utility/levelling.cpp.o.d"
   "warhammer"
   "warhammer.pdb"
 )
