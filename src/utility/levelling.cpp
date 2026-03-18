@@ -7,25 +7,26 @@ Levelling::Levelling() : CurrentLevel(1), CurrentEXP(0) {};
 
 Levelling::Levelling(ui8 cLevel, ui16 cEXP) : CurrentLevel(cLevel), CurrentEXP(cEXP) {}
 
-void Levelling::gainEXP(ui16& gainedEXP, ui8& cLevel) {
-    if(cLevel == MaxLevel) return;         // check if we hit max level
+void Levelling::gainEXP(ui16 gainedEXP) {
+    if(CurrentLevel == MaxLevel) return;         // check if we hit max level
 
     CurrentEXP += gainedEXP;
-    if(CurrentEXP > EXPBarCalc(cLevel)) {  // EXPBarCalc here promises to not change cLevel value
-        cLevel++;                          // checking if current EXP exceeds the cap for the level
-        cout << "Leveled up! The Emperor's favour shines upon thee." << endl;
-        cout << "Current Level: " << cLevel << endl;
-        cout << "Current EXP: " << CurrentEXP << endl;
-    }
-    ui16 newEXPCap = EXPBarCalc(cLevel);
-    cout << "Next EXP Milestone: " << newEXPCap << endl;
+    checkLevelUp(CurrentEXP);
+
+    EXPBarCalc(CurrentLevel);
+    cout << "Next EXP Milestone: " << EXPBarCalc(CurrentLevel) << endl;
 }
 
-ui16 Levelling::EXPBarCalc(const ui8& cLevel) {
-    EXPCap = EXPCapAt1 * (1 << (cLevel - 1)); // bit shifting, representing 2 to the pow of (cLevel - 1)
+ui16 Levelling::EXPBarCalc(const ui8& cLevel) {  // EXPBarCalc promises to not change cLevel value
+    EXPCap = EXPCapAt1 * (1 << (cLevel - 1));    // bit shifting, representing 2 to the pow of (cLevel - 1)
     return EXPCap;
 }
 
-void Levelling::checkLevelUp(const ui16& cEXP, ui8& cLevel) {
-    if (cEXP > EXPCap) cLevel + 1;
+void Levelling::checkLevelUp(const ui16& cEXP) {
+    if (cEXP > EXPCap) {                         // checking if current EXP exceeds the cap for the level
+        CurrentLevel++;
+        cout << "Leveled up! The Emperor's favour shines upon thee." << endl;
+        cout << "Current Level: " << CurrentLevel << endl;
+        cout << "Current EXP: " << CurrentEXP << endl;
+    }
 }

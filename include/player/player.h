@@ -17,24 +17,24 @@ private:
     HP health;
     Faith faith;
     StatBlock stats;
-    Levelling exp;
+    Levelling level;
 
 public:
-    Player() : health(), faith(), stats(), exp() {};
+    Player() : health(), faith(), stats(), level() {};
     Player(const string& name, ui8 cHealth, ui8 mHealth, ui8 armor, ui8 cFaith, ui8 mFaith, ui8 cLevel, ui16 cEXP) {};
 
     void attack(Enemy& enemy) {};
     void takeDamage(ui16 dmg) {};
     void useItem() {};
     void activateAbility() {};
-    
+    void calcEXP(ui16 gainedEXP) {};
 
     void displayStatus() {
         cout << "Name: " << name << endl;
         cout << "Health: " << health.getCurrentHP() << "/" << health.getMaxHP() << endl;
         cout << "Armor: " << health.getArmor() << endl;
         cout << "Faith: " << faith.getCurrentFaith() << "/" << faith.getMaxFaith() << endl;
-        cout << "Level: " << exp.getCurrentLevel() << "/" << exp.getMaxEXP() << endl;
+        cout << "Level: " << level.getCurrentLevel() << "/" << level.getMaxEXP() << endl;
     };
 
     void displayStats() {

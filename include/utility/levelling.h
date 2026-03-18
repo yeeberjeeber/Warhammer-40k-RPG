@@ -17,14 +17,14 @@ protected:
 
     ui16 EXPBarCalc(const ui8& cLevel) {}
 
-    void checkLevelUp(const ui16& cEXP, ui8& cLevel) {}
+    void checkLevelUp(const ui16& cEXP) {}
 
 public:
     Levelling();
 
     Levelling(ui8 cLevel, ui16 cEXP) {}
 
-    void gainEXP(ui16& gainedEXP, ui8& cLevel) {}
+    void gainEXP(ui16 gainedEXP) {}
 
     ui8 getCurrentLevel() { return CurrentLevel; }
     ui16 getCurrentEXP() { return CurrentEXP; }
