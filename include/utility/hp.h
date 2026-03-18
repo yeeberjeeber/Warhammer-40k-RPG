@@ -11,12 +11,12 @@ private:
 
 public:
     // default constructor
-    HP();
+    HP() {};
 
     // overloaded constructor
-    HP(ui16 armor, ui16 cHP, ui16 mHP);
+    HP(ui16 armor, ui16 cHP, ui16 mHP) {};
 
-    bool setMaxHP(ui16 newMaxHP) {}
+    bool setMaxHP(ui16& newMaxHP) {}
     void takeDamage(ui16 Damage) {}
     void heal(ui16 Amount) {}
 

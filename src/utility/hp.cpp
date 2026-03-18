@@ -5,10 +5,10 @@ using namespace std;
 
 HP::HP() : MaxHealth(1), CurrentHealth(1), Armor(1) {};
 
-HP::HP(ui16 armor, ui16 cHP, ui16 mHP) : Armor(armor), CurrentHealth(cHP), MaxHealth(mHP) {};
+HP::HP(ui16 armor, ui16 cHP, ui16 mHP) : Armor(armor), CurrentHealth(cHP), MaxHealth(mHP) { setMaxHP(mHP); }
 
 // returns true if set successful
-bool HP::setMaxHP(ui16 newMaxHP) {
+bool HP::setMaxHP(ui16& newMaxHP) {
     if (newMaxHP < 1) return false; // auto exit if HP is set to 0, handling our error case
 
         MaxHealth = newMaxHP;
@@ -19,12 +19,25 @@ bool HP::setMaxHP(ui16 newMaxHP) {
 }
 
 void HP::takeDamage(ui16 Damage) {
-    if (Damage > CurrentHealth) { // defaulting to 0 to avoid any negative cases
-            CurrentHealth = 0;
-            return;
-        }
+    if (Damage > CurrentHealth) {    // defaulting to 0 to avoid any negative cases
+        CurrentHealth = 0;
+        cout << "For... Ultramar...." << endl;
+        return;
+    }
 
-        CurrentHealth -= Damage;
+    ui16 effDamage = Damage - Armor; // calculating effective damage
+
+    if (effDamage < 0) {
+        CurrentHealth += effDamage;  // spillover damage from armor block
+        cout << "Took " << effDamage << " points of damage!" << endl;
+        return;
+    }
+
+    if (CurrentHealth < 0) {         // final check for 0 health in case
+        CurrentHealth = 0;
+        cout << "For... Ultramar...." << endl;
+        return;
+    }
 }
 
 void HP::heal(ui16 Amount) {

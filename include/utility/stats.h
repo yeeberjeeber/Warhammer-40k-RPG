@@ -9,13 +9,13 @@ private:
     ui8 Speed;
 
 public:
-    StatBlock();
-    StatBlock(ui8 str, ui8 dex, ui8 intel, ui8 spd);
+    StatBlock() {};
+    StatBlock(ui8 str, ui8 dex, ui8 intel, ui8 spd) {};
 
-    void gainStr() {}; // leaving this here for future events
-    void gainDex() {};
-    void gainIntel() {};
-    void gainSpd() {};
+    void gainStr(int str) { Strength += str; } // leaving this here for future events
+    void gainDex(int dex) { Dexterity += dex; }
+    void gainIntel(int intel) { Intelligence += intel; }
+    void gainSpd(int spd) { Speed += spd; }
 
     ui8 getStr() { return Strength; }
     ui8 getDex() { return Dexterity; }

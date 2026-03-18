@@ -6,6 +6,7 @@
 #include "utility/hp.h"
 #include "utility/faith.h"
 #include "utility/stats.h"
+#include "utility/levelling.h"
 #include "utility/types.h"
 using namespace std;
 
@@ -16,25 +17,24 @@ private:
     HP health;
     Faith faith;
     StatBlock stats;
-    int level;
-    ui8 experience;
+    Levelling exp;
 
 public:
-    Player() : health(), faith(), stats() {};
-    Player(const string& name, ui8 cHealth, ui8 mHealth, ui8 armor, ui8 cFaith, ui8 mFaith, int level);
+    Player() : health(), faith(), stats(), exp() {};
+    Player(const string& name, ui8 cHealth, ui8 mHealth, ui8 armor, ui8 cFaith, ui8 mFaith, ui8 cLevel, ui16 cEXP) {};
 
     void attack(Enemy& enemy) {};
-    void takeDamage(int dmg) {};
+    void takeDamage(ui16 dmg) {};
     void useItem() {};
     void activateAbility() {};
-    void levelUp(ui8 exp) {};
+    
 
     void displayStatus() {
         cout << "Name: " << name << endl;
         cout << "Health: " << health.getCurrentHP() << "/" << health.getMaxHP() << endl;
         cout << "Armor: " << health.getArmor() << endl;
         cout << "Faith: " << faith.getCurrentFaith() << "/" << faith.getMaxFaith() << endl;
-        cout << "Level: " << level << endl;
+        cout << "Level: " << exp.getCurrentLevel() << "/" << exp.getMaxEXP() << endl;
     };
 
     void displayStats() {
