@@ -3,7 +3,7 @@
 #include "utility/types.h"
 using namespace std;
 
-Faith::Faith() :  CurrentFaith(StartingFaith), MaxFaith(StartingFaith) {};
+Faith::Faith() :  CurrentFaith(), MaxFaith() {};
 
 Faith::Faith(ui16 cFaith, ui16 mFaith) : CurrentFaith(cFaith), MaxFaith(mFaith) {};
 

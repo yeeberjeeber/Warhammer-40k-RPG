@@ -8,8 +8,7 @@ private:
     ui16 Armor;
     ui16 CurrentHealth;
     ui16 MaxHealth;
-    static const ui16 StartingHealth = 150;
-    static const ui16 StartingArmor = 50;
+    
     
 
 public:

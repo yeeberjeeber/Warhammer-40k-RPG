@@ -3,7 +3,7 @@
 #include "utility/types.h"
 using namespace std;
 
-HP::HP() : MaxHealth(StartingHealth), CurrentHealth(StartingHealth), Armor(StartingArmor) {};
+HP::HP() : MaxHealth(1), CurrentHealth(1), Armor(1) {};
 
 HP::HP(ui16 armor, ui16 cHP, ui16 mHP) : Armor(armor), CurrentHealth(cHP), MaxHealth(mHP) {};
 

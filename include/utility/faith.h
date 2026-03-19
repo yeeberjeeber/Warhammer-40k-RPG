@@ -7,7 +7,6 @@ class Faith {
 private:
     ui16 CurrentFaith;
     ui16 MaxFaith;
-    static const ui16 StartingFaith = 50;
 
 public:
     // default constructor

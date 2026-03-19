@@ -19,6 +19,20 @@ private:
     StatBlock stats;
     Levelling level;
 
+    // base health stats:
+    static const ui16 StartingHealth = 150;
+    static const ui16 StartingArmor = 50;
+
+    // base faith stats:
+    static const ui16 StartingFaith = 50;
+
+    // base stats:
+    static const ui16 baseStr = 23;
+    static const ui16 baseDex = 19;
+    static const ui16 baseIntel = 17;
+    static const ui16 baseSpd = 20;
+
+
 public:
     Player();
     Player(const string& name, ui8 cHealth, ui8 mHealth, ui8 armor, ui8 cFaith, ui8 mFaith, ui8 cLevel, ui16 cEXP);

@@ -8,11 +8,6 @@ private:
     ui16 Intelligence;
     ui16 Speed;
 
-    static const ui16 baseStr = 23;
-    static const ui16 baseDex = 19;
-    static const ui16 baseIntel = 17;
-    static const ui16 baseSpd = 20;
-
 public:
     StatBlock();
     StatBlock(ui16 str, ui16 dex, ui16 intel, ui16 spd);
