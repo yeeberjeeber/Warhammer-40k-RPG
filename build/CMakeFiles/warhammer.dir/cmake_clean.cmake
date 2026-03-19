@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/warhammer.dir/src/utility/hp.cpp.o.d"
   "CMakeFiles/warhammer.dir/src/utility/levelling.cpp.o"
   "CMakeFiles/warhammer.dir/src/utility/levelling.cpp.o.d"
+  "CMakeFiles/warhammer.dir/src/utility/stats.cpp.o"
+  "CMakeFiles/warhammer.dir/src/utility/stats.cpp.o.d"
   "warhammer"
   "warhammer.pdb"
 )

@@ -34,7 +34,8 @@ public:
         cout << "Health: " << health.getCurrentHP() << "/" << health.getMaxHP() << endl;
         cout << "Armor: " << health.getArmor() << endl;
         cout << "Faith: " << faith.getCurrentFaith() << "/" << faith.getMaxFaith() << endl;
-        cout << "Level: " << level.getCurrentLevel() << "/" << level.getMaxEXP() << endl;
+        cout << "Level: " << level.getCurrentLevel() << endl;
+        cout << "Current EXP: " << level.getCurrentEXP() << "/" << level.getMaxEXP() << endl;
     };
 
     void displayStats() {

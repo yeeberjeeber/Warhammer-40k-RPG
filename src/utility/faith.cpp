@@ -3,12 +3,12 @@
 #include "utility/types.h"
 using namespace std;
 
-Faith::Faith() : MaxFaith(1), CurrentFaith(1) {};
+Faith::Faith() :  CurrentFaith(StartingFaith), MaxFaith(StartingFaith) {};
 
-Faith::Faith(ui8 cFaith, ui8 mFaith) : CurrentFaith(cFaith), MaxFaith(mFaith) {};
+Faith::Faith(ui16 cFaith, ui16 mFaith) : CurrentFaith(cFaith), MaxFaith(mFaith) {};
 
 // returns true if set successful
-bool Faith::setMaxFaith(ui8 NewFaithVal) {
+bool Faith::setMaxFaith(ui16 NewFaithVal) {
     if (NewFaithVal < 1) return false;
 
     MaxFaith = NewFaithVal;
@@ -18,7 +18,7 @@ bool Faith::setMaxFaith(ui8 NewFaithVal) {
     return true;
 }
 
-void Faith::consumeFaith(ui8 FaithAmt) {
+void Faith::consumeFaith(ui16 FaithAmt) {
     if (CurrentFaith < FaithAmt) {
         cout << "Insufficient Faith. May the Emperor protect." << endl;
         return;
@@ -27,7 +27,7 @@ void Faith::consumeFaith(ui8 FaithAmt) {
     CurrentFaith -= FaithAmt;
 }
 
-void Faith::regainFaith(ui8 FaithAmt) {
+void Faith::regainFaith(ui16 FaithAmt) {
     if (CurrentFaith + FaithAmt > MaxFaith) {
         CurrentFaith = MaxFaith;
         return;

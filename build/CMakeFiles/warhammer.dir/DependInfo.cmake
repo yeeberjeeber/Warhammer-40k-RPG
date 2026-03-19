@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/oyashi/Aloysius/warhammer-rpg/src/utility/faith.cpp" "CMakeFiles/warhammer.dir/src/utility/faith.cpp.o" "gcc" "CMakeFiles/warhammer.dir/src/utility/faith.cpp.o.d"
   "/home/oyashi/Aloysius/warhammer-rpg/src/utility/hp.cpp" "CMakeFiles/warhammer.dir/src/utility/hp.cpp.o" "gcc" "CMakeFiles/warhammer.dir/src/utility/hp.cpp.o.d"
   "/home/oyashi/Aloysius/warhammer-rpg/src/utility/levelling.cpp" "CMakeFiles/warhammer.dir/src/utility/levelling.cpp.o" "gcc" "CMakeFiles/warhammer.dir/src/utility/levelling.cpp.o.d"
+  "/home/oyashi/Aloysius/warhammer-rpg/src/utility/stats.cpp" "CMakeFiles/warhammer.dir/src/utility/stats.cpp.o" "gcc" "CMakeFiles/warhammer.dir/src/utility/stats.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

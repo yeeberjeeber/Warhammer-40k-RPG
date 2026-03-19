@@ -5,20 +5,21 @@
 
 class Faith {
 private:
-    ui8 CurrentFaith;
-    ui8 MaxFaith;
+    ui16 CurrentFaith;
+    ui16 MaxFaith;
+    static const ui16 StartingFaith = 50;
 
 public:
     // default constructor
     Faith();
 
     // overloaded constructor
-    Faith(ui8 mFaith, ui8 cFaith);
+    Faith(ui16 cFaith, ui16 mFaith);
 
-    bool setMaxFaith(ui8 NewFaithVal);
-    void consumeFaith(ui8 FaithAmt);
-    void regainFaith(ui8 FaithAmt);
+    bool setMaxFaith(ui16 NewFaithVal);
+    void consumeFaith(ui16 FaithAmt);
+    void regainFaith(ui16 FaithAmt);
 
-    ui8 getCurrentFaith() { return CurrentFaith; }
-    ui8 getMaxFaith() { return MaxFaith; }
+    ui16 getCurrentFaith() { return CurrentFaith; }
+    ui16 getMaxFaith() { return MaxFaith; }
 };

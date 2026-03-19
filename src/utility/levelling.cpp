@@ -3,9 +3,9 @@
 #include "utility/types.h"
 using namespace std;
 
-Levelling::Levelling() : CurrentLevel(1), CurrentEXP(0) {};
+Levelling::Levelling() : CurrentLevel(BaseLevel), CurrentEXP(StartingEXP), MaxEXP(EXPBarCalc(BaseLevel)) {}; 
 
-Levelling::Levelling(ui8 cLevel, ui16 cEXP) : CurrentLevel(cLevel), CurrentEXP(cEXP) {}
+Levelling::Levelling(ui16 cLevel, ui16 cEXP) : CurrentLevel(cLevel), CurrentEXP(cEXP) {}
 
 void Levelling::gainEXP(ui16 gainedEXP) {
     if(CurrentLevel == MaxLevel) return;         // check if we hit max level
@@ -17,12 +17,12 @@ void Levelling::gainEXP(ui16 gainedEXP) {
     cout << "Next EXP Milestone: " << EXPBarCalc(CurrentLevel) << endl;
 }
 
-ui16 Levelling::EXPBarCalc(const ui8& cLevel) {  // EXPBarCalc promises to not change cLevel value
+ui16 Levelling::EXPBarCalc(const ui16 cLevel) {  // EXPBarCalc promises to not change cLevel value
     EXPCap = EXPCapAt1 * (1 << (cLevel - 1));    // bit shifting, representing 2 to the pow of (cLevel - 1)
     return EXPCap;
 }
 
-void Levelling::checkLevelUp(const ui16& cEXP) {
+void Levelling::checkLevelUp(const ui16 cEXP) {
     if (cEXP > EXPCap) {                         // checking if current EXP exceeds the cap for the level
         CurrentLevel++;
         cout << "Leveled up! The Emperor's favour shines upon thee." << endl;

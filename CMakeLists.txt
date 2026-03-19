@@ -6,4 +6,5 @@ add_executable(warhammer
        src/player/player.cpp
        src/utility/faith.cpp
        src/utility/hp.cpp
-       src/utility/levelling.cpp)
+       src/utility/levelling.cpp
+       src/utility/stats.cpp)

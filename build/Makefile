@@ -249,6 +249,30 @@ src/utility/levelling.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/utility/levelling.cpp.s
 .PHONY : src/utility/levelling.cpp.s
 
+src/utility/stats.o: src/utility/stats.cpp.o
+.PHONY : src/utility/stats.o
+
+# target to build an object file
+src/utility/stats.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/utility/stats.cpp.o
+.PHONY : src/utility/stats.cpp.o
+
+src/utility/stats.i: src/utility/stats.cpp.i
+.PHONY : src/utility/stats.i
+
+# target to preprocess a source file
+src/utility/stats.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/utility/stats.cpp.i
+.PHONY : src/utility/stats.cpp.i
+
+src/utility/stats.s: src/utility/stats.cpp.s
+.PHONY : src/utility/stats.s
+
+# target to generate assembly for a file
+src/utility/stats.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/utility/stats.cpp.s
+.PHONY : src/utility/stats.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -273,6 +297,9 @@ help:
 	@echo "... src/utility/levelling.o"
 	@echo "... src/utility/levelling.i"
 	@echo "... src/utility/levelling.s"
+	@echo "... src/utility/stats.o"
+	@echo "... src/utility/stats.i"
+	@echo "... src/utility/stats.s"
 .PHONY : help
 
 

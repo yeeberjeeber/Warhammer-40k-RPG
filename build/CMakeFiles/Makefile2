@@ -81,12 +81,12 @@ clean: CMakeFiles/warhammer.dir/clean
 CMakeFiles/warhammer.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/oyashi/Aloysius/warhammer-rpg/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target warhammer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/oyashi/Aloysius/warhammer-rpg/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target warhammer"
 .PHONY : CMakeFiles/warhammer.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/warhammer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oyashi/Aloysius/warhammer-rpg/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/oyashi/Aloysius/warhammer-rpg/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/warhammer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/oyashi/Aloysius/warhammer-rpg/build/CMakeFiles 0
 .PHONY : CMakeFiles/warhammer.dir/rule
