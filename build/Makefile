@@ -129,6 +129,54 @@ warhammer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/build
 .PHONY : warhammer/fast
 
+src/enemy/tyranids/hormagaunt.o: src/enemy/tyranids/hormagaunt.cpp.o
+.PHONY : src/enemy/tyranids/hormagaunt.o
+
+# target to build an object file
+src/enemy/tyranids/hormagaunt.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/enemy/tyranids/hormagaunt.cpp.o
+.PHONY : src/enemy/tyranids/hormagaunt.cpp.o
+
+src/enemy/tyranids/hormagaunt.i: src/enemy/tyranids/hormagaunt.cpp.i
+.PHONY : src/enemy/tyranids/hormagaunt.i
+
+# target to preprocess a source file
+src/enemy/tyranids/hormagaunt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/enemy/tyranids/hormagaunt.cpp.i
+.PHONY : src/enemy/tyranids/hormagaunt.cpp.i
+
+src/enemy/tyranids/hormagaunt.s: src/enemy/tyranids/hormagaunt.cpp.s
+.PHONY : src/enemy/tyranids/hormagaunt.s
+
+# target to generate assembly for a file
+src/enemy/tyranids/hormagaunt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/enemy/tyranids/hormagaunt.cpp.s
+.PHONY : src/enemy/tyranids/hormagaunt.cpp.s
+
+src/events/battle.o: src/events/battle.cpp.o
+.PHONY : src/events/battle.o
+
+# target to build an object file
+src/events/battle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/events/battle.cpp.o
+.PHONY : src/events/battle.cpp.o
+
+src/events/battle.i: src/events/battle.cpp.i
+.PHONY : src/events/battle.i
+
+# target to preprocess a source file
+src/events/battle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/events/battle.cpp.i
+.PHONY : src/events/battle.cpp.i
+
+src/events/battle.s: src/events/battle.cpp.s
+.PHONY : src/events/battle.s
+
+# target to generate assembly for a file
+src/events/battle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/events/battle.cpp.s
+.PHONY : src/events/battle.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -282,6 +330,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... warhammer"
+	@echo "... src/enemy/tyranids/hormagaunt.o"
+	@echo "... src/enemy/tyranids/hormagaunt.i"
+	@echo "... src/enemy/tyranids/hormagaunt.s"
+	@echo "... src/events/battle.o"
+	@echo "... src/events/battle.i"
+	@echo "... src/events/battle.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

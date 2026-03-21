@@ -23,8 +23,12 @@ ui16 Levelling::EXPBarCalc(const ui16 cLevel) {  // EXPBarCalc promises to not c
 }
 
 void Levelling::checkLevelUp(const ui16 cEXP) {
+    cout << cEXP << " EXP gained." << endl;
+
     if (cEXP > EXPCap) {                         // checking if current EXP exceeds the cap for the level
         CurrentLevel++;
+        // Stat Spread per level
+        
         cout << "Leveled up! The Emperor's favour shines upon thee." << endl;
         cout << "Current Level: " << CurrentLevel << endl;
         cout << "Current EXP: " << CurrentEXP << endl;

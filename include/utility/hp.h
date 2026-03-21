@@ -26,4 +26,5 @@ public:
     ui16 getMaxHP() const { return MaxHealth; }
     ui16 getCurrentHP() const { return CurrentHealth; }
     ui16 getArmor() const { return Armor; }
+    bool isAlive(ui16 cHealth);
 };

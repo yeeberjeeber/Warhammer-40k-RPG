@@ -24,12 +24,14 @@ void HP::takeDamage(ui16 Damage) {
         return;
     }
 
-    ui16 effDamage = Damage - Armor; // calculating effective damage
+    si16 effDamage = Damage - Armor; // calculating effective damage
 
     if (effDamage < 0) {
         CurrentHealth += effDamage;  // spillover damage from armor block
         return;
     }
+
+    CurrentHealth -= effDamage;
 
     if (CurrentHealth < 0) {         // final check for 0 health in case
         CurrentHealth = 0;
@@ -44,4 +46,13 @@ void HP::heal(ui16 Amount) {
         }
 
         CurrentHealth += Amount;
+}
+
+bool HP::isAlive(ui16 cHealth) {
+    if (cHealth != 0) {
+        return true;
+    }
+    else {
+        return false;
+    }
 }

@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/warhammer.dir/src/enemy/tyranids/hormagaunt.cpp.o"
+  "CMakeFiles/warhammer.dir/src/enemy/tyranids/hormagaunt.cpp.o.d"
+  "CMakeFiles/warhammer.dir/src/events/battle.cpp.o"
+  "CMakeFiles/warhammer.dir/src/events/battle.cpp.o.d"
   "CMakeFiles/warhammer.dir/src/main.cpp.o"
   "CMakeFiles/warhammer.dir/src/main.cpp.o.d"
   "CMakeFiles/warhammer.dir/src/player/player.cpp.o"

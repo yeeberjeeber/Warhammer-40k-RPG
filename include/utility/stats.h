@@ -12,6 +12,8 @@ public:
     StatBlock();
     StatBlock(ui16 str, ui16 dex, ui16 intel, ui16 spd);
 
+    ui16 calculateDamage(ui8 str, ui8 dex);
+
     void gainStr(int str) { Strength += str; } // leaving this here for future events
     void gainDex(int dex) { Dexterity += dex; }
     void gainIntel(int intel) { Intelligence += intel; }
