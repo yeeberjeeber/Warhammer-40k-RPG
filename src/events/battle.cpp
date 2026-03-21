@@ -6,18 +6,16 @@
 using namespace std;
 
 void BattleEvents::Battle(Player& player, Enemy& enemy) {
-    player.displayStatus();
-    ScanEnemy(enemy);
+    cout << "<------------------- GAME START ---------------->" << endl;
+    BattleStart(player, enemy);
 
     while (player.isAlive() && enemy.isAlive()) {
         PlayerChoice(player, enemy);
         if (enemy.isAlive()) {
             player.takeDamage(enemy.getAttackDamage());
-            cout << enemy.isAlive() << endl;
         } else {
             player.calcEXP(enemy.onDeath());
-            cout << "Current Stats: " << endl;
-            player.displayStatus();
+            BattleEnd(player);
         }
     }
     
@@ -27,6 +25,8 @@ void BattleEvents::ScanEnemy(Enemy& enemy) {
     cout << "Upon contact with a hostile, your helmet's integrated scanner pulls up threat assessment data:" << endl;
     enemy.displayStats();
     cout << "Prepare for battle." << endl;
+    cout << endl;
+    cout << "<------------------- BATTLE START ---------------->" << endl;
 }
 
 void BattleEvents::PlayerChoice(Player& player, Enemy& enemy) {
@@ -48,4 +48,21 @@ void BattleEvents::PlayerChoice(Player& player, Enemy& enemy) {
             cout << "Invalid choice. This world is unforgiving." << endl;
             break;
     }
+}
+
+void BattleEvents::BattleStart(Player& player, Enemy& enemy) {
+    cout << endl;
+    player.displayStatus();
+    cout << endl;
+    cout << "Player Stats:" << endl;
+    player.displayStats();
+    cout << endl;
+    ScanEnemy(enemy);
+}
+
+void BattleEvents::BattleEnd(Player& player) {
+    cout << "<------------------- BATTLE END ---------------->" << endl;
+    cout << endl;
+    cout << "Status: " << endl;
+    player.displayStatus();
 }

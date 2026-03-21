@@ -8,7 +8,8 @@ Hormagaunt::Hormagaunt() : health(BaseArmor, BaseHealth, BaseHealth),
 
 void Hormagaunt::takeDamage(ui16 dmg) {
     health.takeDamage(dmg);
-    cout << "Took " << dmg << " damage!" << endl;
+    cout << endl;
+    cout << "Enemy took " << dmg << " damage!" << endl;
 }
 
 ui16 Hormagaunt::getAttackDamage() {
@@ -20,7 +21,7 @@ bool Hormagaunt::isAlive() {
 }
 
 ui16 Hormagaunt::onDeath() {
-    cout << "It screeched once—sharp, alien, and furious—before collapsing into stillness, its chitinous limbs twitching as the hive mind’s grip slipped into silence." << endl;
+    cout << "It screeched once — sharp, alien, and furious, before collapsing into stillness, its chitinous limbs twitching as the hive mind’s grip slipped into silence." << endl;
     return EXP;
 }
 

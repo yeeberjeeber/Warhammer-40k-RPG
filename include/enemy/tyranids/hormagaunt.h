@@ -16,7 +16,7 @@
         ui16 BaseSpd = 17;
 
         // exp given
-        ui16 EXP = 100;
+        ui16 EXP = 50;
 
         HP health;
         StatBlock stats;

@@ -48,6 +48,7 @@ public:
     void activateAbility();
     void calcEXP(ui16 gainedEXP);
     bool isAlive();
+    void gainStats();
 
     void displayStatus() {
         cout << "Name: " << name << endl;

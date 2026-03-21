@@ -9,4 +9,8 @@ public:
     static void ScanEnemy(Enemy& enemy);
 
     static void PlayerChoice(Player& player, Enemy& enemy);
+
+    static void BattleStart(Player& player, Enemy& enemy);
+
+    static void BattleEnd(Player& player);
 };
