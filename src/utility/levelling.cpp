@@ -1,6 +1,7 @@
 #include <iostream>
 #include "utility/levelling.h"
 #include "utility/types.h"
+#include <cmath>
 using namespace std;
 
 Levelling::Levelling() : CurrentLevel(BaseLevel), CurrentEXP(StartingEXP), MaxEXP(EXPBarCalc(BaseLevel)) {}; 
@@ -18,14 +19,19 @@ void Levelling::gainEXP(ui16 gainedEXP) {
 }
 
 ui16 Levelling::EXPBarCalc(const ui16 cLevel) {  // EXPBarCalc promises to not change cLevel value
-    EXPCap = EXPCapAt1 * (1 << (cLevel - 1));    // bit shifting, representing 2 to the pow of (cLevel - 1)
+    EXPCap = EXPCapAt1 * pow(EXPMult, cLevel - 1);    // bit shifting, representing 2 to the pow of (cLevel - 1)
     return EXPCap;
+}
+
+ui64 Levelling::getMaxEXP() {
+    MaxEXP = EXPCapAt1 * pow(EXPMult, 99 - 1);
+    return MaxEXP;
 }
 
 void Levelling::checkLevelUp(const ui16 cEXP) {
     cout << cEXP << " EXP gained." << endl;
 
-    if (cEXP > EXPCap) {                         // checking if current EXP exceeds the cap for the level
+    if (cEXP >= EXPCap) {                         // checking if current EXP exceeds the cap for the level
         CurrentLevel++;
         // Stat Spread per level
         

@@ -1301,6 +1301,7 @@ CMakeFiles/warhammer.dir/src/utility/levelling.cpp.o: /home/oyashi/Aloysius/warh
   /usr/include/c++/13/bits/range_access.h \
   /usr/include/c++/13/bits/refwrap.h \
   /usr/include/c++/13/bits/requires_hosted.h \
+  /usr/include/c++/13/bits/specfun.h \
   /usr/include/c++/13/bits/std_abs.h \
   /usr/include/c++/13/bits/stl_algobase.h \
   /usr/include/c++/13/bits/stl_construct.h \
@@ -1319,6 +1320,7 @@ CMakeFiles/warhammer.dir/src/utility/levelling.cpp.o: /home/oyashi/Aloysius/warh
   /usr/include/c++/13/cctype \
   /usr/include/c++/13/cerrno \
   /usr/include/c++/13/clocale \
+  /usr/include/c++/13/cmath \
   /usr/include/c++/13/cstddef \
   /usr/include/c++/13/cstdint \
   /usr/include/c++/13/cstdio \
@@ -1338,6 +1340,7 @@ CMakeFiles/warhammer.dir/src/utility/levelling.cpp.o: /home/oyashi/Aloysius/warh
   /usr/include/c++/13/iosfwd \
   /usr/include/c++/13/iostream \
   /usr/include/c++/13/istream \
+  /usr/include/c++/13/limits \
   /usr/include/c++/13/new \
   /usr/include/c++/13/ostream \
   /usr/include/c++/13/pstl/pstl_config.h \
@@ -1346,6 +1349,18 @@ CMakeFiles/warhammer.dir/src/utility/levelling.cpp.o: /home/oyashi/Aloysius/warh
   /usr/include/c++/13/string \
   /usr/include/c++/13/string_view \
   /usr/include/c++/13/system_error \
+  /usr/include/c++/13/tr1/bessel_function.tcc \
+  /usr/include/c++/13/tr1/beta_function.tcc \
+  /usr/include/c++/13/tr1/ell_integral.tcc \
+  /usr/include/c++/13/tr1/exp_integral.tcc \
+  /usr/include/c++/13/tr1/gamma.tcc \
+  /usr/include/c++/13/tr1/hypergeometric.tcc \
+  /usr/include/c++/13/tr1/legendre_function.tcc \
+  /usr/include/c++/13/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/13/tr1/poly_hermite.tcc \
+  /usr/include/c++/13/tr1/poly_laguerre.tcc \
+  /usr/include/c++/13/tr1/riemann_zeta.tcc \
+  /usr/include/c++/13/tr1/special_function_util.h \
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
   /usr/include/c++/13/typeinfo \
@@ -1356,6 +1371,7 @@ CMakeFiles/warhammer.dir/src/utility/levelling.cpp.o: /home/oyashi/Aloysius/warh
   /usr/include/features.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
@@ -1374,9 +1390,18 @@ CMakeFiles/warhammer.dir/src/utility/levelling.cpp.o: /home/oyashi/Aloysius/warh
   /usr/include/x86_64-linux-gnu/bits/errno.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
   /usr/include/x86_64-linux-gnu/bits/locale.h \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
@@ -1643,7 +1668,25 @@ CMakeFiles/warhammer.dir/src/utility/stats.cpp.o: /home/oyashi/Aloysius/warhamme
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
 
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+
 /home/oyashi/Aloysius/warhammer-rpg/src/utility/stats.cpp:
+
+/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+
+/usr/include/c++/13/tr1/poly_hermite.tcc:
+
+/usr/include/c++/13/tr1/legendre_function.tcc:
+
+/usr/include/c++/13/tr1/exp_integral.tcc:
+
+/usr/include/c++/13/tr1/ell_integral.tcc:
+
+/usr/include/c++/13/limits:
+
+/usr/include/c++/13/bits/specfun.h:
 
 /home/oyashi/Aloysius/warhammer-rpg/src/player/player.cpp:
 
@@ -1656,6 +1699,8 @@ CMakeFiles/warhammer.dir/src/utility/stats.cpp.o: /home/oyashi/Aloysius/warhamme
 /usr/include/c++/13/bits/stl_vector.h:
 
 /usr/include/c++/13/bits/stl_uninitialized.h:
+
+/usr/include/c++/13/tr1/bessel_function.tcc:
 
 /usr/include/c++/13/bits/shared_ptr_base.h:
 
@@ -1679,6 +1724,8 @@ CMakeFiles/warhammer.dir/src/utility/stats.cpp.o: /home/oyashi/Aloysius/warhamme
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
 
+/usr/include/c++/13/cmath:
+
 /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
@@ -1686,6 +1733,8 @@ CMakeFiles/warhammer.dir/src/utility/stats.cpp.o: /home/oyashi/Aloysius/warhamme
 /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
+
+/usr/include/c++/13/tr1/modified_bessel_func.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
@@ -1710,6 +1759,8 @@ CMakeFiles/warhammer.dir/src/utility/stats.cpp.o: /home/oyashi/Aloysius/warhamme
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
 /usr/include/c++/13/bits/stl_raw_storage_iter.h:
 
@@ -1807,6 +1858,8 @@ CMakeFiles/warhammer.dir/src/utility/stats.cpp.o: /home/oyashi/Aloysius/warhamme
 
 /usr/include/c++/13/bits/move.h:
 
+/usr/include/c++/13/tr1/hypergeometric.tcc:
+
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
 /usr/include/c++/13/type_traits:
@@ -1820,6 +1873,8 @@ CMakeFiles/warhammer.dir/src/utility/stats.cpp.o: /home/oyashi/Aloysius/warhamme
 /usr/include/c++/13/bits/exception.h:
 
 /usr/include/asm-generic/errno-base.h:
+
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 /home/oyashi/Aloysius/warhammer-rpg/src/utility/levelling.cpp:
 
@@ -1846,6 +1901,8 @@ CMakeFiles/warhammer.dir/src/utility/stats.cpp.o: /home/oyashi/Aloysius/warhamme
 /usr/include/c++/13/bit:
 
 /usr/include/c++/13/bits/basic_string.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 /usr/include/c++/13/bits/locale_classes.h:
 
@@ -1903,6 +1960,8 @@ CMakeFiles/warhammer.dir/src/utility/stats.cpp.o: /home/oyashi/Aloysius/warhamme
 
 /usr/include/wchar.h:
 
+/usr/include/c++/13/tr1/special_function_util.h:
+
 /usr/include/stdc-predef.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
@@ -1913,7 +1972,11 @@ CMakeFiles/warhammer.dir/src/utility/stats.cpp.o: /home/oyashi/Aloysius/warhamme
 
 /usr/include/c++/13/bits/stl_iterator_base_types.h:
 
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+
 /usr/include/c++/13/bits/localefwd.h:
+
+/usr/include/math.h:
 
 /usr/include/c++/13/bits/exception_defines.h:
 
@@ -1947,6 +2010,8 @@ CMakeFiles/warhammer.dir/src/utility/stats.cpp.o: /home/oyashi/Aloysius/warhamme
 
 /usr/include/c++/13/ios:
 
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
 /usr/include/c++/13/bits/std_abs.h:
 
 /usr/include/c++/13/bits/postypes.h:
@@ -1962,6 +2027,8 @@ CMakeFiles/warhammer.dir/src/utility/stats.cpp.o: /home/oyashi/Aloysius/warhamme
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
+
+/usr/include/c++/13/tr1/beta_function.tcc:
 
 /usr/include/c++/13/bits/stl_function.h:
 
@@ -2005,6 +2072,8 @@ CMakeFiles/warhammer.dir/src/utility/stats.cpp.o: /home/oyashi/Aloysius/warhamme
 
 /usr/include/errno.h:
 
+/usr/include/c++/13/tr1/gamma.tcc:
+
 /usr/include/c++/13/cctype:
 
 /usr/include/c++/13/ext/atomicity.h:
@@ -2021,6 +2090,8 @@ CMakeFiles/warhammer.dir/src/utility/stats.cpp.o: /home/oyashi/Aloysius/warhamme
 
 /usr/include/c++/13/initializer_list:
 
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
 /usr/include/c++/13/istream:
 
 /usr/include/c++/13/string_view:
@@ -2030,6 +2101,8 @@ CMakeFiles/warhammer.dir/src/utility/stats.cpp.o: /home/oyashi/Aloysius/warhamme
 /usr/include/c++/13/ext/alloc_traits.h:
 
 /usr/include/c++/13/new:
+
+/usr/include/c++/13/tr1/riemann_zeta.tcc:
 
 /usr/include/c++/13/bits/streambuf_iterator.h:
 
@@ -2086,6 +2159,8 @@ CMakeFiles/warhammer.dir/src/utility/stats.cpp.o: /home/oyashi/Aloysius/warhamme
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/include/c++/13/tr1/poly_laguerre.tcc:
 
 /usr/include/c++/13/bits/basic_string.h:
 

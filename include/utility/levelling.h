@@ -6,11 +6,11 @@ class Levelling {
 protected:
     ui16 CurrentLevel;
     ui16 CurrentEXP;
-    ui16 MaxEXP;
+    ui64 MaxEXP;
     ui16 EXPCap;
 
     // hard caps
-    static const ui16 EXPMult = 2;
+    static constexpr float EXPMult = 1.2f;
     static const ui16 EXPCapAt1 = 100;
     static const ui16 MaxLevel = 99;
 
@@ -31,6 +31,6 @@ public:
     // getters
     ui16 getCurrentLevel() { return CurrentLevel; }
     ui16 getCurrentEXP() { return CurrentEXP; }
-    ui16 getMaxEXP() { return MaxEXP; }
-
+    ui64 getMaxEXP();
+    ui16 getEXPCap() { return EXPCap; }
 };
