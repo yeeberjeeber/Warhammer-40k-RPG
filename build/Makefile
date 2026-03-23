@@ -129,6 +129,30 @@ warhammer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/build
 .PHONY : warhammer/fast
 
+src/enemy/enemy.o: src/enemy/enemy.cpp.o
+.PHONY : src/enemy/enemy.o
+
+# target to build an object file
+src/enemy/enemy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/enemy/enemy.cpp.o
+.PHONY : src/enemy/enemy.cpp.o
+
+src/enemy/enemy.i: src/enemy/enemy.cpp.i
+.PHONY : src/enemy/enemy.i
+
+# target to preprocess a source file
+src/enemy/enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/enemy/enemy.cpp.i
+.PHONY : src/enemy/enemy.cpp.i
+
+src/enemy/enemy.s: src/enemy/enemy.cpp.s
+.PHONY : src/enemy/enemy.s
+
+# target to generate assembly for a file
+src/enemy/enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/enemy/enemy.cpp.s
+.PHONY : src/enemy/enemy.cpp.s
+
 src/enemy/tyranids/hormagaunt.o: src/enemy/tyranids/hormagaunt.cpp.o
 .PHONY : src/enemy/tyranids/hormagaunt.o
 
@@ -152,6 +176,54 @@ src/enemy/tyranids/hormagaunt.s: src/enemy/tyranids/hormagaunt.cpp.s
 src/enemy/tyranids/hormagaunt.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/enemy/tyranids/hormagaunt.cpp.s
 .PHONY : src/enemy/tyranids/hormagaunt.cpp.s
+
+src/enemy/tyranids/termagaunt.o: src/enemy/tyranids/termagaunt.cpp.o
+.PHONY : src/enemy/tyranids/termagaunt.o
+
+# target to build an object file
+src/enemy/tyranids/termagaunt.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/enemy/tyranids/termagaunt.cpp.o
+.PHONY : src/enemy/tyranids/termagaunt.cpp.o
+
+src/enemy/tyranids/termagaunt.i: src/enemy/tyranids/termagaunt.cpp.i
+.PHONY : src/enemy/tyranids/termagaunt.i
+
+# target to preprocess a source file
+src/enemy/tyranids/termagaunt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/enemy/tyranids/termagaunt.cpp.i
+.PHONY : src/enemy/tyranids/termagaunt.cpp.i
+
+src/enemy/tyranids/termagaunt.s: src/enemy/tyranids/termagaunt.cpp.s
+.PHONY : src/enemy/tyranids/termagaunt.s
+
+# target to generate assembly for a file
+src/enemy/tyranids/termagaunt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/enemy/tyranids/termagaunt.cpp.s
+.PHONY : src/enemy/tyranids/termagaunt.cpp.s
+
+src/enemy/tyranids/tyranid.o: src/enemy/tyranids/tyranid.cpp.o
+.PHONY : src/enemy/tyranids/tyranid.o
+
+# target to build an object file
+src/enemy/tyranids/tyranid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/enemy/tyranids/tyranid.cpp.o
+.PHONY : src/enemy/tyranids/tyranid.cpp.o
+
+src/enemy/tyranids/tyranid.i: src/enemy/tyranids/tyranid.cpp.i
+.PHONY : src/enemy/tyranids/tyranid.i
+
+# target to preprocess a source file
+src/enemy/tyranids/tyranid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/enemy/tyranids/tyranid.cpp.i
+.PHONY : src/enemy/tyranids/tyranid.cpp.i
+
+src/enemy/tyranids/tyranid.s: src/enemy/tyranids/tyranid.cpp.s
+.PHONY : src/enemy/tyranids/tyranid.s
+
+# target to generate assembly for a file
+src/enemy/tyranids/tyranid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/enemy/tyranids/tyranid.cpp.s
+.PHONY : src/enemy/tyranids/tyranid.cpp.s
 
 src/events/battle.o: src/events/battle.cpp.o
 .PHONY : src/events/battle.o
@@ -330,9 +402,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... warhammer"
+	@echo "... src/enemy/enemy.o"
+	@echo "... src/enemy/enemy.i"
+	@echo "... src/enemy/enemy.s"
 	@echo "... src/enemy/tyranids/hormagaunt.o"
 	@echo "... src/enemy/tyranids/hormagaunt.i"
 	@echo "... src/enemy/tyranids/hormagaunt.s"
+	@echo "... src/enemy/tyranids/termagaunt.o"
+	@echo "... src/enemy/tyranids/termagaunt.i"
+	@echo "... src/enemy/tyranids/termagaunt.s"
+	@echo "... src/enemy/tyranids/tyranid.o"
+	@echo "... src/enemy/tyranids/tyranid.i"
+	@echo "... src/enemy/tyranids/tyranid.s"
 	@echo "... src/events/battle.o"
 	@echo "... src/events/battle.i"
 	@echo "... src/events/battle.s"

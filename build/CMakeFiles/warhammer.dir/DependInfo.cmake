@@ -8,7 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/oyashi/Aloysius/warhammer-rpg/src/enemy/enemy.cpp" "CMakeFiles/warhammer.dir/src/enemy/enemy.cpp.o" "gcc" "CMakeFiles/warhammer.dir/src/enemy/enemy.cpp.o.d"
   "/home/oyashi/Aloysius/warhammer-rpg/src/enemy/tyranids/hormagaunt.cpp" "CMakeFiles/warhammer.dir/src/enemy/tyranids/hormagaunt.cpp.o" "gcc" "CMakeFiles/warhammer.dir/src/enemy/tyranids/hormagaunt.cpp.o.d"
+  "/home/oyashi/Aloysius/warhammer-rpg/src/enemy/tyranids/termagaunt.cpp" "CMakeFiles/warhammer.dir/src/enemy/tyranids/termagaunt.cpp.o" "gcc" "CMakeFiles/warhammer.dir/src/enemy/tyranids/termagaunt.cpp.o.d"
+  "/home/oyashi/Aloysius/warhammer-rpg/src/enemy/tyranids/tyranid.cpp" "CMakeFiles/warhammer.dir/src/enemy/tyranids/tyranid.cpp.o" "gcc" "CMakeFiles/warhammer.dir/src/enemy/tyranids/tyranid.cpp.o.d"
   "/home/oyashi/Aloysius/warhammer-rpg/src/events/battle.cpp" "CMakeFiles/warhammer.dir/src/events/battle.cpp.o" "gcc" "CMakeFiles/warhammer.dir/src/events/battle.cpp.o.d"
   "/home/oyashi/Aloysius/warhammer-rpg/src/main.cpp" "CMakeFiles/warhammer.dir/src/main.cpp.o" "gcc" "CMakeFiles/warhammer.dir/src/main.cpp.o.d"
   "/home/oyashi/Aloysius/warhammer-rpg/src/player/player.cpp" "CMakeFiles/warhammer.dir/src/player/player.cpp.o" "gcc" "CMakeFiles/warhammer.dir/src/player/player.cpp.o.d"

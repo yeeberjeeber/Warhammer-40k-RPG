@@ -158,4 +158,9 @@ CMakeFiles/warhammer.dir/src/enemy/tyranids/hormagaunt.cpp.o: \
  /home/oyashi/Aloysius/warhammer-rpg/include/enemy/tyranids/hormagaunt.h \
  /home/oyashi/Aloysius/warhammer-rpg/include/enemy/enemy.h \
  /home/oyashi/Aloysius/warhammer-rpg/include/utility/hp.h \
- /home/oyashi/Aloysius/warhammer-rpg/include/utility/stats.h
+ /home/oyashi/Aloysius/warhammer-rpg/include/utility/stats.h \
+ /home/oyashi/Aloysius/warhammer-rpg/include/enemy/tyranids/tyranid.h \
+ /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
+ /usr/include/c++/13/bits/stl_vector.h \
+ /usr/include/c++/13/bits/stl_bvector.h \
+ /usr/include/c++/13/bits/vector.tcc

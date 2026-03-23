@@ -1,10 +1,9 @@
 #include <iostream>
 #include "utility/types.h"
-#include "enemy/tyranids/hormagaunt.h"
-#include "utility/hp.h"
+#include "enemy/tyranids/termagaunt.h"
 using namespace std;
 
-Hormagaunt::Hormagaunt() {
+Termagaunt::Termagaunt() {
 
     // stats
     BaseHealth = 11;
@@ -23,7 +22,7 @@ Hormagaunt::Hormagaunt() {
 
 }
 
-ui16 Hormagaunt::onDeath() {
+ui16 Termagaunt::onDeath() {
     cout << "It screeched once — sharp, alien, and furious, before collapsing into stillness, its chitinous limbs twitching as the hive mind’s grip slipped into silence." << endl;
     return EXP;
 }

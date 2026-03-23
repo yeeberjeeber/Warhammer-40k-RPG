@@ -1,6 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/warhammer.dir/src/enemy/enemy.cpp.o"
+  "CMakeFiles/warhammer.dir/src/enemy/enemy.cpp.o.d"
   "CMakeFiles/warhammer.dir/src/enemy/tyranids/hormagaunt.cpp.o"
   "CMakeFiles/warhammer.dir/src/enemy/tyranids/hormagaunt.cpp.o.d"
+  "CMakeFiles/warhammer.dir/src/enemy/tyranids/termagaunt.cpp.o"
+  "CMakeFiles/warhammer.dir/src/enemy/tyranids/termagaunt.cpp.o.d"
+  "CMakeFiles/warhammer.dir/src/enemy/tyranids/tyranid.cpp.o"
+  "CMakeFiles/warhammer.dir/src/enemy/tyranids/tyranid.cpp.o.d"
   "CMakeFiles/warhammer.dir/src/events/battle.cpp.o"
   "CMakeFiles/warhammer.dir/src/events/battle.cpp.o.d"
   "CMakeFiles/warhammer.dir/src/main.cpp.o"

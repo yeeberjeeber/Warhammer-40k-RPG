@@ -9,4 +9,7 @@ add_executable(warhammer
        src/utility/levelling.cpp
        src/utility/stats.cpp
        src/events/battle.cpp
-       src/enemy/tyranids/hormagaunt.cpp)
+       src/enemy/enemy.cpp
+       src/enemy/tyranids/tyranid.cpp
+       src/enemy/tyranids/hormagaunt.cpp
+       src/enemy/tyranids/termagaunt.cpp)
