@@ -7,7 +7,7 @@
 #include "utility/types.h"
 using namespace std;
 
-Player::Player() : name("Jon Wingard"), 
+Player::Player() : name("John Wingard"), 
                    health(StartingArmor, StartingHealth, StartingHealth), 
                    faith(StartingFaith, StartingFaith), 
                    level(), 
