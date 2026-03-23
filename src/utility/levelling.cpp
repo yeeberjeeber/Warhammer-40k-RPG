@@ -6,9 +6,9 @@ using namespace std;
 
 Levelling::Levelling() : CurrentLevel(BaseLevel), CurrentEXP(StartingEXP), MaxEXP(EXPBarCalc(BaseLevel)) {}; 
 
-Levelling::Levelling(ui16 cLevel, ui16 cEXP) : CurrentLevel(cLevel), CurrentEXP(cEXP) {}
+Levelling::Levelling(ui16 cLevel, ui64 cEXP) : CurrentLevel(cLevel), CurrentEXP(cEXP) {}
 
-bool Levelling::gainEXP(ui16 gainedEXP) {
+bool Levelling::gainEXP(ui64 gainedEXP) {
     if(CurrentLevel == MaxLevel) {
         cout << "Max level reached." << endl;
         return false;         // check if we hit max level

@@ -23,6 +23,6 @@ Termagaunt::Termagaunt() {
 }
 
 ui16 Termagaunt::onDeath() {
-    cout << "It screeched once — sharp, alien, and furious, before collapsing into stillness, its chitinous limbs twitching as the hive mind’s grip slipped into silence." << endl;
+    cout << "The Termagaunt let out a shriek that died in its throat as it crumpled to the ground, its chitinous limbs twitching once before going still." << endl;
     return EXP;
 }

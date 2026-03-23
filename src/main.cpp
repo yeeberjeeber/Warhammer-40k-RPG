@@ -6,9 +6,8 @@ using namespace std;
 
 int main() {
 	Player p;
-	Hormagaunt e;
 
-	BattleEvents::Battle(p, e);
+	BattleEvents::BattleMultipleTyranids(p);
 
 	return 0;
 }

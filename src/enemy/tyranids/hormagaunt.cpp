@@ -24,6 +24,6 @@ Hormagaunt::Hormagaunt() {
 }
 
 ui16 Hormagaunt::onDeath() {
-    cout << "It screeched once — sharp, alien, and furious, before collapsing into stillness, its chitinous limbs twitching as the hive mind’s grip slipped into silence." << endl;
+    cout << "The Hormagaunt screeched once — sharp, alien, and furious, before collapsing into stillness, its chitinous limbs twitching as the hive mind’s grip slipped into silence." << endl;
     return EXP;
 }

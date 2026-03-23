@@ -153,6 +153,30 @@ src/enemy/enemy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/enemy/enemy.cpp.s
 .PHONY : src/enemy/enemy.cpp.s
 
+src/enemy/tyranids/carnifex.o: src/enemy/tyranids/carnifex.cpp.o
+.PHONY : src/enemy/tyranids/carnifex.o
+
+# target to build an object file
+src/enemy/tyranids/carnifex.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/enemy/tyranids/carnifex.cpp.o
+.PHONY : src/enemy/tyranids/carnifex.cpp.o
+
+src/enemy/tyranids/carnifex.i: src/enemy/tyranids/carnifex.cpp.i
+.PHONY : src/enemy/tyranids/carnifex.i
+
+# target to preprocess a source file
+src/enemy/tyranids/carnifex.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/enemy/tyranids/carnifex.cpp.i
+.PHONY : src/enemy/tyranids/carnifex.cpp.i
+
+src/enemy/tyranids/carnifex.s: src/enemy/tyranids/carnifex.cpp.s
+.PHONY : src/enemy/tyranids/carnifex.s
+
+# target to generate assembly for a file
+src/enemy/tyranids/carnifex.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/enemy/tyranids/carnifex.cpp.s
+.PHONY : src/enemy/tyranids/carnifex.cpp.s
+
 src/enemy/tyranids/hormagaunt.o: src/enemy/tyranids/hormagaunt.cpp.o
 .PHONY : src/enemy/tyranids/hormagaunt.o
 
@@ -405,6 +429,9 @@ help:
 	@echo "... src/enemy/enemy.o"
 	@echo "... src/enemy/enemy.i"
 	@echo "... src/enemy/enemy.s"
+	@echo "... src/enemy/tyranids/carnifex.o"
+	@echo "... src/enemy/tyranids/carnifex.i"
+	@echo "... src/enemy/tyranids/carnifex.s"
 	@echo "... src/enemy/tyranids/hormagaunt.o"
 	@echo "... src/enemy/tyranids/hormagaunt.i"
 	@echo "... src/enemy/tyranids/hormagaunt.s"

@@ -183,4 +183,6 @@ CMakeFiles/warhammer.dir/src/events/battle.cpp.o: \
  /home/oyashi/Aloysius/warhammer-rpg/include/enemy/enemies.h \
  /home/oyashi/Aloysius/warhammer-rpg/include/enemy/tyranids/hormagaunt.h \
  /home/oyashi/Aloysius/warhammer-rpg/include/enemy/enemy.h \
- /home/oyashi/Aloysius/warhammer-rpg/include/enemy/tyranids/tyranid.h
+ /home/oyashi/Aloysius/warhammer-rpg/include/enemy/tyranids/tyranid.h \
+ /home/oyashi/Aloysius/warhammer-rpg/include/enemy/tyranids/termagaunt.h \
+ /home/oyashi/Aloysius/warhammer-rpg/include/enemy/tyranids/carnifex.h

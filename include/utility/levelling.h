@@ -4,7 +4,7 @@
 class Levelling {
 
 protected:
-    ui8 CurrentLevel;
+    ui16 CurrentLevel;
     ui64 CurrentEXP;
     ui64 MaxEXP;
     ui16 EXPCap;
@@ -24,9 +24,9 @@ protected:
 public:
     Levelling();
 
-    Levelling(ui16 cLevel, ui16 cEXP);
+    Levelling(ui16 cLevel, ui64 cEXP);
 
-    bool gainEXP(ui16 gainedEXP);
+    bool gainEXP(ui64 gainedEXP);
 
     // getters
     ui16 getCurrentLevel() { return CurrentLevel; }

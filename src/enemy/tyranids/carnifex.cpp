@@ -19,3 +19,8 @@ Carnifex::Carnifex() {
     health = HP(BaseArmor, BaseHealth, BaseHealth);
     stats = StatBlock(BaseStr, BaseDex, BaseIntel, BaseSpd);
 }
+
+ui16 Carnifex::onDeath() {
+    cout << "The Carnifex crashed down like a falling fortress, shaking the ground beneath my boots as its massive armoured body finally gave out, the light fading from its alien eyes with one last rattling bellow." << endl;
+    return EXP;
+}

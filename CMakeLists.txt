@@ -11,5 +11,6 @@ add_executable(warhammer
        src/events/battle.cpp
        src/enemy/enemy.cpp
        src/enemy/tyranids/tyranid.cpp
+       src/enemy/tyranids/carnifex.cpp
        src/enemy/tyranids/hormagaunt.cpp
        src/enemy/tyranids/termagaunt.cpp)
