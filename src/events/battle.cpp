@@ -151,7 +151,7 @@ vector<unique_ptr<Tyranid>> BattleEvents::SpawnTyranidEnemies() {
 
     // populating enemies vector
     for (int i = 0; i < numHormagaunts; i++) {
-        enemies.push_back(make_unique<Hormagaunt>());
+        enemies.push_back(make_unique<Hormagaunt>()); // all Hormagaunts are the same
     }
 
     for (int i = 0; i < numTermagaunts; i++) {
