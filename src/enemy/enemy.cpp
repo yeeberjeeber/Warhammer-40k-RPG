@@ -38,6 +38,5 @@ void Enemy::displayStats() {
 }
 
 ui16 Enemy::onDeath() {
-    cout << "Enemy falls to the ground, lifeless." << endl;
     return EXP;
 }

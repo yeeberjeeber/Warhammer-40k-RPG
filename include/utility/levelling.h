@@ -8,6 +8,7 @@ protected:
     ui64 CurrentEXP;
     ui64 MaxEXP;
     ui16 EXPCap;
+    ui16 DisplayXP;
 
     // hard caps
     static constexpr float EXPMult = 1.2f;
@@ -19,7 +20,7 @@ protected:
 
     ui16 EXPBarCalc(const ui16 cLevel);
 
-    bool checkLevelUp(const ui16 cEXP);
+    bool checkLevelUp(const ui16 cEXP, const ui16 dEXP);
 
 public:
     Levelling();

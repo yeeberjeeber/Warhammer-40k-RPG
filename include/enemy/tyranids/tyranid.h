@@ -12,7 +12,7 @@
     public:
         // Tyranid Hive behaviour
         void synapseLink(vector<Tyranid*>& tyranids);
-        void synapseCheck();
+        bool synapseCheck();
 
         virtual ~Tyranid() = default;
     };

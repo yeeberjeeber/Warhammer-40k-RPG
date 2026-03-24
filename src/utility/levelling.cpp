@@ -14,8 +14,9 @@ bool Levelling::gainEXP(ui64 gainedEXP) {
         return false;         // check if we hit max level
     }
 
+    DisplayXP = gainedEXP;
     CurrentEXP += gainedEXP;
-    bool levelled = checkLevelUp(CurrentEXP);
+    bool levelled = checkLevelUp(CurrentEXP, DisplayXP);
 
     if (levelled) {
         EXPBarCalc(CurrentLevel);
@@ -35,16 +36,18 @@ ui64 Levelling::getMaxEXP() {
     return MaxEXP;
 }
 
-bool Levelling::checkLevelUp(const ui16 cEXP) {
+bool Levelling::checkLevelUp(const ui16 cEXP, const ui16 dEXP) {
     cout << endl;
-    cout << cEXP << " EXP gained." << endl;
+    cout << dEXP << " EXP gained." << endl;
 
     while (cEXP >= EXPCap) {                         // checking if current EXP exceeds the cap for the level
+        cout << "<------------------- LEVEL UP ---------------->" << endl;
         CurrentLevel++;
         cout << "Leveled up! The Emperor's favour shines upon thee." << endl;
         cout << "Current Level: " << CurrentLevel << endl;
-        cout << "Current EXP: " << CurrentEXP << endl;
         CurrentEXP = cEXP - EXPCap;
+        cout << "Current EXP: " << CurrentEXP << endl;
+        cout << "<--------------------------------------------->" << endl;
         return true;
     }
 

@@ -26,23 +26,29 @@ void BattleEvents::BattleMultipleTyranids(Player& player) {
     cout << "<------------------- GAME START ---------------->" << endl;
     auto enemies = SpawnTyranidEnemies();
 
-    for (auto& e : enemies) {
+    for (auto& en : enemies) {
         if (!player.isAlive()) break;
 
-        while(player.isAlive() && e->isAlive()) {
+        while(player.isAlive() && en->isAlive()) {
             SelectTarget(player, enemies);
 
             for (auto& e : enemies) {
                 if (e->isAlive()) {
-                    cout << "Health before damage: " << player.getHealth() << endl;
-                    player.takeDamage(e->getAttackDamage());
-                    cout << "Enemy attacks for " << e->getAttackDamage() << " damage!" << endl;
-                    cout << "Health after damage: " << player.getHealth() << endl;
-                    cout << endl;
-                    e->synapseCheck();
-                } else {
+                    e->synapseCheck();   // check if synapse source is alive
+                    if (e->synapseCheck()) {
+                        cout << "Enemy falls to the ground, lifeless." << endl;
+                        player.calcEXP(e->onDeath());
+                    }
+                    else {
+                        player.takeDamage(e->getAttackDamage());
+                        cout << "Enemy attacks for " << e->getAttackDamage() << " damage!" << endl;
+                        cout << endl;
+                    }
+                }
+                else {
+                    cout << "Enemy falls to the ground, lifeless." << endl;
                     player.calcEXP(e->onDeath());
-                } 
+                }
             }
         }
     }

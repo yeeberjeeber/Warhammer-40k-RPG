@@ -22,8 +22,11 @@ void Tyranid::synapseLink(vector<Tyranid*>& tyranids) {
     synapseSource = highest;
 }
 
-void Tyranid::synapseCheck() {
+bool Tyranid::synapseCheck() {
     if (synapseSource != nullptr && !synapseSource->isAlive()) {
         takeDamage(health.getCurrentHP());
+        return true;
     }
+
+    return false;
 }
