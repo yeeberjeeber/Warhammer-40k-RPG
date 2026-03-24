@@ -20,14 +20,10 @@ void Tyranid::synapseLink(vector<Tyranid*>& tyranids) {
     }
 
     synapseSource = highest;
-
-    cout << synapseSource->getName() << endl;
 }
 
 void Tyranid::synapseCheck() {
     if (synapseSource != nullptr && !synapseSource->isAlive()) {
-        cout << "Own health damaged: " << health.getCurrentHP() << endl;
         takeDamage(health.getCurrentHP());
-        cout << "Current Health: " << health.getCurrentHP() << endl;
     }
 }

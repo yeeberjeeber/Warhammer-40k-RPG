@@ -17,8 +17,10 @@ bool Levelling::gainEXP(ui64 gainedEXP) {
     CurrentEXP += gainedEXP;
     bool levelled = checkLevelUp(CurrentEXP);
 
-    EXPBarCalc(CurrentLevel);
-    cout << "Next EXP Milestone: " << EXPBarCalc(CurrentLevel) << endl;
+    if (levelled) {
+        EXPBarCalc(CurrentLevel);
+        cout << "Next EXP Milestone: " << EXPBarCalc(CurrentLevel) << endl;
+    }
 
     return levelled;
 }
