@@ -9,7 +9,7 @@ Mainly used for personal learning in developing an actual C++ project.<br/>
 <br/>
 
 # Lessons Learned:
-1. How small `uint8_t` actually was, tried to declare variables (e.g. level) using said type, only for the program to return 1 after multiple tries.
+1. Learned how small `uint8_t` actually was, tried to declare variables (e.g. level) using said type, only for the program to return 1 after multiple tries.
    - Changed all `uint8_t` type declarations to `uint16_t` instead to avoid bugs
 
 <br/>
