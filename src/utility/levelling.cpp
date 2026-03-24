@@ -39,11 +39,12 @@ bool Levelling::checkLevelUp(const ui16 cEXP) {
     cout << endl;
     cout << cEXP << " EXP gained." << endl;
 
-    if (cEXP >= EXPCap) {                         // checking if current EXP exceeds the cap for the level
+    while (cEXP >= EXPCap) {                         // checking if current EXP exceeds the cap for the level
         CurrentLevel++;
         cout << "Leveled up! The Emperor's favour shines upon thee." << endl;
         cout << "Current Level: " << CurrentLevel << endl;
         cout << "Current EXP: " << CurrentEXP << endl;
+        CurrentEXP = cEXP - EXPCap;
         return true;
     }
 

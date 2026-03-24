@@ -48,6 +48,10 @@ void Player::calcEXP(ui16 gainedEXP) {
     }
 }
 
+ui16 Player::getHealth() {
+    return health.getCurrentHP();
+}
+
 bool Player::isAlive() {
     return health.isAlive(health.getCurrentHP());
 }
@@ -58,4 +62,5 @@ void Player::gainStats() {
     stats.gainDex(5);
     stats.gainIntel(4);
     stats.gainSpd(6);
+    cout << "Your strength is bolstered." << endl;
 }

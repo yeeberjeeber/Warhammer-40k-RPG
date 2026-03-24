@@ -34,8 +34,10 @@ void BattleEvents::BattleMultipleTyranids(Player& player) {
 
             for (auto& e : enemies) {
                 if (e->isAlive()) {
+                    cout << "Health before damage: " << player.getHealth() << endl;
                     player.takeDamage(e->getAttackDamage());
                     cout << "Enemy attacks for " << e->getAttackDamage() << " damage!" << endl;
+                    cout << "Health after damage: " << player.getHealth() << endl;
                     cout << endl;
                     e->synapseCheck();
                 } else {
@@ -44,13 +46,6 @@ void BattleEvents::BattleMultipleTyranids(Player& player) {
             }
         }
     }
-        
-    // for (auto& e : enemies) {
-    //     if (e->isAlive()) {
-    //         cout << "Check implemented" << endl;
-    //         e->synapseCheck();
-    //     }
-    // }
 }
 
 void BattleEvents::ScanEnemy(Enemy& enemy) {
@@ -76,7 +71,7 @@ void BattleEvents::SelectTarget(Player& player, vector<unique_ptr<Tyranid>>& ene
     cout << "Select a target:" << endl;
     int target;
     cin >> target;
-    target--;
+    target--;      // making it 0 indexed
 
     if (target < 0 || target >= enemies.size() || !enemies[target]->isAlive()) {
         cout << "Invalid target." << endl;

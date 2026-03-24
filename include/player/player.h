@@ -49,7 +49,7 @@ public:
     void calcEXP(ui16 gainedEXP);
     bool isAlive();
     void gainStats();
-    
+    ui16 getHealth();
 
     void displayStatus() {
         cout << endl;

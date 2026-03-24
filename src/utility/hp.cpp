@@ -24,14 +24,25 @@ void HP::takeDamage(ui16 Damage) {
         return;
     }
 
-    si16 effDamage = Damage - Armor; // calculating effective damage
+    si16 effDamage;
+
+    if (Damage < Armor) {
+        Armor -= Damage;
+    }
+    else {
+        effDamage = Damage - Armor;  // calculating effective damage
+        Armor = 0;
+        cout << "effDamage: " << effDamage << endl;
+    }
 
     if (effDamage < 0) {
         CurrentHealth += effDamage;  // spillover damage from armor block
+        cout << "Spillover damage: " << CurrentHealth << endl;
         return;
     }
 
     CurrentHealth -= effDamage;
+    cout << "Current Health: " << CurrentHealth << endl;
 
     if (CurrentHealth < 0) {         // final check for 0 health in case
         CurrentHealth = 0;
