@@ -20,7 +20,7 @@ Mainly used for personal learning in developing an actual C++ project.<br/>
       - Without the above, I would need to redeclare code for each specific enemy
       - Pointers are essential to prevent object slicing
       - When we declare `virtual` during runtime, for each object with virtual methods, a hidden vtable that stores addresses of actual methods for that class is created by the compiler
-      - e.g. When we call method `e->attack();`, the compiler looks at the vtable pointer, find the address of `attack()` and call it
+        - e.g. When we call method `e->attack();`, the compiler looks at the vtable pointer, find the address of `attack()` and call it
 
 <br/>
 
