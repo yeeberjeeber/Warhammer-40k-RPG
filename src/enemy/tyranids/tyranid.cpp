@@ -13,17 +13,21 @@ void Tyranid::synapseLink(vector<Tyranid*>& tyranids) {
 
     for (auto& t : tyranids) {  // iterating over each item in tyranids vector
         if (t != this) {        // do not link to self
-            if (highest == nullptr || t->weightage > highest->weightage) {
+            if (highest == nullptr || t->weightage >= highest->weightage) {
                 highest = t;
             }
         }
     }
 
     synapseSource = highest;
+
+    cout << synapseSource->getName() << endl;
 }
 
 void Tyranid::synapseCheck() {
     if (synapseSource != nullptr && !synapseSource->isAlive()) {
+        cout << "Own health damaged: " << health.getCurrentHP() << endl;
         takeDamage(health.getCurrentHP());
+        cout << "Current Health: " << health.getCurrentHP() << endl;
     }
 }

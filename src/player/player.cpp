@@ -37,8 +37,12 @@ void Player::activateAbility() {
 
 void Player::calcEXP(ui16 gainedEXP) {
     if (level.gainEXP(gainedEXP)) {
-        gainStats();
+        health.setMaxHP(50);
+        health.fullHeal();
         cout << endl;
+        cout << "Current Status: " << endl;
+        displayStatus();
+        gainStats();
         cout << "New Stats:" << endl;
         displayStats();
     }
@@ -47,6 +51,7 @@ void Player::calcEXP(ui16 gainedEXP) {
 bool Player::isAlive() {
     return health.isAlive(health.getCurrentHP());
 }
+
 
 void Player::gainStats() {
     stats.gainStr(9);

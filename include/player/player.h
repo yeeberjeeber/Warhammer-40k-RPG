@@ -49,20 +49,25 @@ public:
     void calcEXP(ui16 gainedEXP);
     bool isAlive();
     void gainStats();
+    
 
     void displayStatus() {
+        cout << endl;
         cout << "Name: " << name << endl;
         cout << "Health: " << health.getCurrentHP() << "/" << health.getMaxHP() << endl;
         cout << "Armor: " << health.getArmor() << endl;
         cout << "Faith: " << faith.getCurrentFaith() << "/" << faith.getMaxFaith() << endl;
         cout << "Level: " << level.getCurrentLevel() << endl;
         cout << "Current EXP: " << level.getCurrentEXP() << "/" << level.getEXPCap() << endl;
+        cout << endl;
     };
 
     void displayStats() {
+        cout << endl;
         cout << "Strength: " << stats.getStr() << endl;
         cout << "Dexterity: " << stats.getDex() << endl;
         cout << "Intelligence: " << stats.getIntel() << endl;
         cout << "Speed: " << stats.getSpeed() << endl;
+        cout << endl;
     }
 };  

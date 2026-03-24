@@ -6,6 +6,4 @@
     class Hormagaunt : public Tyranid {
     public:
         Hormagaunt();
-        
-        ui16 onDeath() override;
     };

@@ -8,6 +8,4 @@
     class Termagaunt : public Tyranid {
     public:
         Termagaunt();
-
-        ui16 onDeath() override;
     };

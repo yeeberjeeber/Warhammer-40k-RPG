@@ -3,9 +3,14 @@
 #include "utility/stats.h"
 #include "utility/hp.h"
 #include "utility/stats.h"
+#include <string>
 
 void Enemy::takeDamage(ui16 dmg) {
     health.takeDamage(dmg);
+    if (health.getCurrentHP() == 0) {
+        onDeath();
+        return;
+    }
     cout << endl;
     cout << "Enemy took " << dmg << " damage!" << endl;
 }
@@ -18,8 +23,21 @@ bool Enemy::isAlive() {
     return health.isAlive(health.getCurrentHP());
 }
 
+string Enemy::getName() {
+    return Name;
+}
+
+ui16 Enemy::getHealth() {
+    return health.getCurrentHP();
+}
+
 void Enemy::displayStats() {
     cout << "Health: " << BaseHealth << endl;
     cout << "Damage: " << getAttackDamage() << endl;
     cout << "Speed: " << BaseSpd << endl;
+}
+
+ui16 Enemy::onDeath() {
+    cout << "Enemy falls to the ground, lifeless." << endl;
+    return EXP;
 }

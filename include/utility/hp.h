@@ -21,6 +21,7 @@ public:
     bool setMaxHP(ui16 newMaxHP);
     void takeDamage(ui16 Damage);
     void heal(ui16 Amount);
+    void fullHeal();
 
     // getters
     ui16 getMaxHP() const { return MaxHealth; }

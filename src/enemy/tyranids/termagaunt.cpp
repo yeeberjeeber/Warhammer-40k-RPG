@@ -4,6 +4,7 @@
 using namespace std;
 
 Termagaunt::Termagaunt() {
+    Name = "Termagaunt";
 
     // stats
     BaseHealth = 11;
@@ -20,9 +21,4 @@ Termagaunt::Termagaunt() {
     health = HP(BaseArmor, BaseHealth, BaseHealth);
     stats = StatBlock(BaseStr, BaseDex, BaseIntel, BaseSpd);
 
-}
-
-ui16 Termagaunt::onDeath() {
-    cout << "The Termagaunt let out a shriek that died in its throat as it crumpled to the ground, its chitinous limbs twitching once before going still." << endl;
-    return EXP;
 }

@@ -6,7 +6,4 @@
 class Carnifex : public Tyranid {
 public:
     Carnifex();
-
-
-    ui16 onDeath() override;
 };

@@ -5,6 +5,7 @@
 using namespace std;
 
 Hormagaunt::Hormagaunt() {
+    Name = "Hormagaunt";
 
     // stats
     BaseHealth = 11;
@@ -21,9 +22,4 @@ Hormagaunt::Hormagaunt() {
     health = HP(BaseArmor, BaseHealth, BaseHealth);
     stats = StatBlock(BaseStr, BaseDex, BaseIntel, BaseSpd);
 
-}
-
-ui16 Hormagaunt::onDeath() {
-    cout << "The Hormagaunt screeched once — sharp, alien, and furious, before collapsing into stillness, its chitinous limbs twitching as the hive mind’s grip slipped into silence." << endl;
-    return EXP;
 }

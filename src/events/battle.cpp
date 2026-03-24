@@ -36,18 +36,21 @@ void BattleEvents::BattleMultipleTyranids(Player& player) {
                 if (e->isAlive()) {
                     player.takeDamage(e->getAttackDamage());
                     cout << "Enemy attacks for " << e->getAttackDamage() << " damage!" << endl;
+                    cout << endl;
+                    e->synapseCheck();
                 } else {
                     player.calcEXP(e->onDeath());
                 } 
             }
         }
-
-        for (auto& e : enemies) {
-            if (e->isAlive()) {
-                e->synapseCheck();
-            }
-        }
     }
+        
+    // for (auto& e : enemies) {
+    //     if (e->isAlive()) {
+    //         cout << "Check implemented" << endl;
+    //         e->synapseCheck();
+    //     }
+    // }
 }
 
 void BattleEvents::ScanEnemy(Enemy& enemy) {
@@ -63,8 +66,9 @@ void BattleEvents::SelectTarget(Player& player, vector<unique_ptr<Tyranid>>& ene
     cout << "Enemies: " << endl;
     for (int i = 0; i < enemies.size(); i++) {
         if (enemies[i]->isAlive()) {
-            cout << "[" << i + 1 << "]" << endl;
+            cout << "[" << i + 1 << "]" << " " << enemies[i]->getName() << endl;
             enemies[i]->displayStats();
+            cout << endl;
         }
     }
 

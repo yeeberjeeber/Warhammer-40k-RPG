@@ -39,8 +39,6 @@ bool Levelling::checkLevelUp(const ui16 cEXP) {
 
     if (cEXP >= EXPCap) {                         // checking if current EXP exceeds the cap for the level
         CurrentLevel++;
-        // Stat Spread per level
-        
         cout << "Leveled up! The Emperor's favour shines upon thee." << endl;
         cout << "Current Level: " << CurrentLevel << endl;
         cout << "Current EXP: " << CurrentEXP << endl;
