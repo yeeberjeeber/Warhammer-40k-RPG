@@ -34,7 +34,7 @@ void BattleEvents::BattleMultipleTyranids(Player& player) {
 
             for (auto& e : enemies) {
                 if (e->isAlive()) {
-                    e->synapseCheck();   // check if synapse source is alive
+                    e->synapseCheck();   // check if synapse source is not alive
                     if (e->synapseCheck()) {
                         cout << "Enemy falls to the ground, lifeless." << endl;
                         player.calcEXP(e->onDeath());
