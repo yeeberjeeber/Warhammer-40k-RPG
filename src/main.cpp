@@ -7,7 +7,8 @@ using namespace std;
 int main() {
 	Player p;
 
-	BattleEvents::BattleMultipleTyranids(p);
+	BattleEvents battle;
+	battle.BattleMultipleTyranids(p);
 
 	return 0;
 }

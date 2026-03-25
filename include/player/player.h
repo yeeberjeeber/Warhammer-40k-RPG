@@ -57,8 +57,10 @@ public:
     // get weapon details
     string getPrimaryName();
     ui16 getPrimaryDamage();
+    ui16 getPrimaryAmmo();
     string getSecondaryName();
     ui16 getSecondaryDamage();
+    ui16 getSecondaryAmmo();
     string getMeleeName();
     ui16 getMeleeDamage();
 

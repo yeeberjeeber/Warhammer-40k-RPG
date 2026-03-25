@@ -8,6 +8,7 @@ BoltPistol::BoltPistol() {
     name = "Bolt Pistol";
     type = false;
     damage = 25;
+    ammo = 25;
 
     requiredStr = 9;
     requiredDex = 8;

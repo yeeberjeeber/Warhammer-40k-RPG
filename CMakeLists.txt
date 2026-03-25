@@ -17,4 +17,6 @@ add_executable(warhammer
        src/weapons/melee/chainsword.cpp
        src/weapons/ranged/boltpistol.cpp
        src/weapons/ranged/stormbolter.cpp
-       src/weapons/weapon.cpp)
+       src/weapons/weapon.cpp
+       src/events/enemy/enemyevents.cpp
+       src/events/player/playerevents.cpp)

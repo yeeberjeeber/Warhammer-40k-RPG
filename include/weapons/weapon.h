@@ -9,6 +9,7 @@ protected:
     string name;
     bool type;
     ui16 damage;
+    ui16 ammo;
 
     ui16 requiredStr;
     ui16 requiredDex;
@@ -18,7 +19,8 @@ protected:
 
 public:
     string getName() const { return name; }
-    int getDamage() const { return damage; }
+    ui16 getDamage() const { return damage; }
+    ui16 getAmmo() const { return ammo; }
     bool requiredStats(ui16 rStr, ui16 rDex, ui16 rIntel);
     ui16 calcDamage(bool type);
     virtual ~Weapon() = default; // virtual destructor

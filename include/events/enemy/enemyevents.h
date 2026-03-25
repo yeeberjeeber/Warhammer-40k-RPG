@@ -1,0 +1,17 @@
+#pragma once
+#include "utility/types.h"
+#include "player/player.h"
+#include "enemy/enemies.h"
+#include <vector>
+#include <random>
+#include <algorithm>
+#include <ctime>
+
+class EnemyEvents {
+private:
+    mt rng { random_device {}() };
+
+public:
+    vector<unique_ptr<Tyranid>> SpawnTyranidEnemies();
+    mt& getRNG();
+};

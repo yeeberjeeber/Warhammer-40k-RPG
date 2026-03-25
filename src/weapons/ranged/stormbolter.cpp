@@ -8,6 +8,7 @@ StormBolter::StormBolter() {
     name = "Storm Bolter";
     type = false;
     damage = 75;
+    ammo = 12;
 
     requiredStr = 22;
     requiredDex = 16;

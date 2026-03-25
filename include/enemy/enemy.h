@@ -19,6 +19,8 @@
         // exp given
         ui16 EXP;
 
+        
+
         HP health;
         StatBlock stats;
 

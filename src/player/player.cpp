@@ -75,12 +75,20 @@ ui16 Player::getPrimaryDamage() {
     return Primary->getDamage();
 }
 
+ui16 Player::getPrimaryAmmo() {
+    return Primary->getAmmo();
+}
+
 string Player::getSecondaryName() {
     return Secondary->getName();
 }
 
 ui16 Player:: getSecondaryDamage() {
     return Secondary->getDamage();
+}
+
+ui16 Player::getSecondaryAmmo() {
+    return Secondary->getAmmo();
 }
 
 string Player::getMeleeName() {
@@ -90,3 +98,4 @@ string Player::getMeleeName() {
 ui16 Player::getMeleeDamage() {
     return Melee->getDamage();
 }
+
