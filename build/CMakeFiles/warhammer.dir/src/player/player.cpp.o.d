@@ -1,5 +1,5 @@
 CMakeFiles/warhammer.dir/src/player/player.cpp.o: \
- /home/oyashi/Aloysius/warhammer-rpg/src/player/player.cpp \
+ /home/aloyst1/code/Warhammer-40k-RPG/src/player/player.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -172,16 +172,16 @@ CMakeFiles/warhammer.dir/src/player/player.cpp.o: \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/oyashi/Aloysius/warhammer-rpg/include/items/item.h \
- /home/oyashi/Aloysius/warhammer-rpg/include/player/player.h \
- /home/oyashi/Aloysius/warhammer-rpg/include/utility/hp.h \
- /home/oyashi/Aloysius/warhammer-rpg/include/utility/types.h \
+ /home/aloyst1/code/Warhammer-40k-RPG/include/items/item.h \
+ /home/aloyst1/code/Warhammer-40k-RPG/include/player/player.h \
+ /home/aloyst1/code/Warhammer-40k-RPG/include/utility/hp.h \
+ /home/aloyst1/code/Warhammer-40k-RPG/include/utility/types.h \
  /usr/include/c++/13/cstdint \
- /home/oyashi/Aloysius/warhammer-rpg/include/utility/faith.h \
- /home/oyashi/Aloysius/warhammer-rpg/include/utility/stats.h \
- /home/oyashi/Aloysius/warhammer-rpg/include/utility/levelling.h \
- /home/oyashi/Aloysius/warhammer-rpg/include/weapons/weapon.h \
- /home/oyashi/Aloysius/warhammer-rpg/include/weapons/weapons.h \
- /home/oyashi/Aloysius/warhammer-rpg/include/weapons/melee/chainsword.h \
- /home/oyashi/Aloysius/warhammer-rpg/include/weapons/ranged/boltpistol.h \
- /home/oyashi/Aloysius/warhammer-rpg/include/weapons/ranged/stormbolter.h
+ /home/aloyst1/code/Warhammer-40k-RPG/include/utility/faith.h \
+ /home/aloyst1/code/Warhammer-40k-RPG/include/utility/stats.h \
+ /home/aloyst1/code/Warhammer-40k-RPG/include/utility/levelling.h \
+ /home/aloyst1/code/Warhammer-40k-RPG/include/weapons/weapon.h \
+ /home/aloyst1/code/Warhammer-40k-RPG/include/weapons/weapons.h \
+ /home/aloyst1/code/Warhammer-40k-RPG/include/weapons/melee/chainsword.h \
+ /home/aloyst1/code/Warhammer-40k-RPG/include/weapons/ranged/boltpistol.h \
+ /home/aloyst1/code/Warhammer-40k-RPG/include/weapons/ranged/stormbolter.h

@@ -1,5 +1,5 @@
 CMakeFiles/warhammer.dir/src/enemy/enemy.cpp.o: \
- /home/oyashi/Aloysius/warhammer-rpg/src/enemy/enemy.cpp \
+ /home/aloyst1/code/Warhammer-40k-RPG/src/enemy/enemy.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -150,11 +150,11 @@ CMakeFiles/warhammer.dir/src/enemy/enemy.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/oyashi/Aloysius/warhammer-rpg/include/enemy/enemy.h \
- /home/oyashi/Aloysius/warhammer-rpg/include/utility/types.h \
+ /home/aloyst1/code/Warhammer-40k-RPG/include/enemy/enemy.h \
+ /home/aloyst1/code/Warhammer-40k-RPG/include/utility/types.h \
  /usr/include/c++/13/cstdint \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /home/oyashi/Aloysius/warhammer-rpg/include/utility/hp.h \
- /home/oyashi/Aloysius/warhammer-rpg/include/utility/stats.h
+ /home/aloyst1/code/Warhammer-40k-RPG/include/utility/hp.h \
+ /home/aloyst1/code/Warhammer-40k-RPG/include/utility/stats.h

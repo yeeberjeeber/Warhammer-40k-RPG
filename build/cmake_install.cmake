@@ -1,4 +1,4 @@
-# Install script for directory: /home/oyashi/Aloysius/warhammer-rpg
+# Install script for directory: /home/aloyst1/code/Warhammer-40k-RPG
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/oyashi/Aloysius/warhammer-rpg/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/aloyst1/code/Warhammer-40k-RPG/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

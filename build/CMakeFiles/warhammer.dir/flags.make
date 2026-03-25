@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/oyashi/Aloysius/warhammer-rpg/include
+CXX_INCLUDES = -I/home/aloyst1/code/Warhammer-40k-RPG/include
 
 CXX_FLAGS = 
 
