@@ -30,10 +30,6 @@ private:
     ui16 baseIntel = 17;
     ui16 baseSpd = 20;
 
-    // damage formula:
-    ui16 meleeDamage = (baseStr * 1.5) + (baseDex * 0.25);
-    ui16 rangedDamage = (baseDex * 1.5) + (baseStr * 0.25);
-
     // weapons
     unique_ptr<Weapon> Primary = nullptr;
     unique_ptr<Weapon> Secondary = nullptr;
@@ -50,8 +46,6 @@ public:
     Player(const string& name, ui8 cHealth, ui8 mHealth, ui8 armor, ui8 cFaith, ui8 mFaith, ui8 cLevel, ui16 cEXP);
 
     void takeDamage(ui16 dmg);
-    ui16 ChainswordSlash();
-    ui16 BolterFire();
     void useItem();
     void activateAbility();
     void calcEXP(ui16 gainedEXP);

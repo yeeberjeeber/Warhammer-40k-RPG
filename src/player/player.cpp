@@ -17,14 +17,6 @@ Player::Player() : name("John Wingard"),
 
 Player::Player(const string& name, ui8 cHealth, ui8 mHealth, ui8 armor, ui8 cFaith, ui8 mFaith, ui8 cLevel, ui16 cEXP) : name(name), health(armor, cHealth, mHealth), faith(cFaith, mFaith), level(cLevel, cEXP) {};
 
-ui16 Player::ChainswordSlash() {
-    return meleeDamage;
-}
-
-ui16 Player::BolterFire() {
-    return rangedDamage;
-}
-
 void Player::takeDamage(ui16 dmg) {
     health.takeDamage(dmg);
 }
