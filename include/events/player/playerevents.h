@@ -10,7 +10,8 @@ private:
 public:
     mt& getRNG();
     void checkAmmo(Player& player);
-    void selectChoice(ui16 choice, Player& player, Enemy& enemy);
+    void PlayerOption(Player& player, Enemy& enemy);
+    void SelectChoice(ui16 choice, Player& player, Enemy& enemy);
     void PlayerChoice(Player& player, Enemy& enemy);
     void ScanEnemy(Enemy& enemy);
 };

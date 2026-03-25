@@ -12,7 +12,7 @@ void BattleEvents::Battle(Player& player, Enemy& enemy) {
     BattleStart(player, enemy);
 
     while (player.isAlive() && enemy.isAlive()) {
-        pEvents.PlayerChoice(player, enemy);
+        pEvents.PlayerOption(player, enemy);
         if (enemy.isAlive()) {
             player.takeDamage(enemy.getAttackDamage());
         } else {

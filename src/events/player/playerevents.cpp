@@ -31,7 +31,7 @@ void PlayerEvents::checkAmmo(Player& player) {
     cout << "[3] " << player.getMeleeName() << endl;
 }
 
-void PlayerEvents::selectChoice(ui16 choice, Player& player, Enemy& enemy) {
+void PlayerEvents::SelectChoice(ui16 choice, Player& player, Enemy& enemy) {
     switch(choice) {
         case 1:
             if (player.getPrimaryAmmo() != 0) {
@@ -62,13 +62,34 @@ void PlayerEvents::selectChoice(ui16 choice, Player& player, Enemy& enemy) {
 }
 
 void PlayerEvents::PlayerChoice(Player& player, Enemy& enemy) {
+    cout << "<------------------- PLAYER TURN ---------------->" << endl;
     cout << "You make a choice — engage from distance with bolter fire, or close the gap and let the chainsword do its work:" << endl;
 
     ui16 choice;
     checkAmmo(player);
     cin >> choice;
 
-    selectChoice(choice, player, enemy);
+    SelectChoice(choice, player, enemy);
+}
+
+void PlayerEvents::PlayerOption(Player& player, Enemy& enemy) {
+    ui16 choice;
+    cout << "[1] Attack" << endl;
+    cout << "[2] Use Item" << endl;
+    cout << "[3] Use Ability" << endl;
+    cout << "[4] Run" << endl;
+    cin >> choice;
+    switch(choice) {
+        case 1:
+            PlayerChoice(player, enemy);
+            break;
+        case 4:
+            cout << "There is no running." << endl;
+            break;
+        default:
+            cout << "Invalid choice. This world is unforgiving." << endl;
+            break;
+    }
 }
 
 void PlayerEvents::ScanEnemy(Enemy& enemy) {
