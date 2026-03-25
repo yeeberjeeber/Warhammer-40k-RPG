@@ -1,5 +1,5 @@
-CMakeFiles/warhammer.dir/src/enemy/tyranids/termagaunt.cpp.o: \
- /home/aloyst1/code/Warhammer-40k-RPG/src/enemy/tyranids/termagaunt.cpp \
+CMakeFiles/warhammer.dir/src/events/player/playerevents.cpp.o: \
+ /home/aloyst1/code/Warhammer-40k-RPG/src/events/player/playerevents.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -194,8 +194,34 @@ CMakeFiles/warhammer.dir/src/enemy/tyranids/termagaunt.cpp.o: \
  /usr/include/c++/13/bits/stl_heap.h \
  /usr/include/c++/13/bits/stl_tempbuf.h \
  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
- /home/aloyst1/code/Warhammer-40k-RPG/include/enemy/tyranids/termagaunt.h \
+ /home/aloyst1/code/Warhammer-40k-RPG/include/enemy/enemies.h \
+ /home/aloyst1/code/Warhammer-40k-RPG/include/enemy/tyranids/hormagaunt.h \
  /home/aloyst1/code/Warhammer-40k-RPG/include/enemy/enemy.h \
  /home/aloyst1/code/Warhammer-40k-RPG/include/utility/hp.h \
  /home/aloyst1/code/Warhammer-40k-RPG/include/utility/stats.h \
- /home/aloyst1/code/Warhammer-40k-RPG/include/enemy/tyranids/tyranid.h
+ /home/aloyst1/code/Warhammer-40k-RPG/include/enemy/tyranids/tyranid.h \
+ /home/aloyst1/code/Warhammer-40k-RPG/include/enemy/tyranids/termagaunt.h \
+ /home/aloyst1/code/Warhammer-40k-RPG/include/enemy/tyranids/carnifex.h \
+ /home/aloyst1/code/Warhammer-40k-RPG/include/events/player/playerevents.h \
+ /home/aloyst1/code/Warhammer-40k-RPG/include/player/player.h \
+ /usr/include/c++/13/memory \
+ /usr/include/c++/13/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/13/bits/align.h /usr/include/c++/13/bits/unique_ptr.h \
+ /usr/include/c++/13/bits/shared_ptr.h \
+ /usr/include/c++/13/bits/shared_ptr_base.h \
+ /usr/include/c++/13/bits/allocated_ptr.h \
+ /usr/include/c++/13/ext/aligned_buffer.h \
+ /usr/include/c++/13/ext/concurrence.h \
+ /usr/include/c++/13/bits/shared_ptr_atomic.h \
+ /usr/include/c++/13/bits/atomic_base.h \
+ /usr/include/c++/13/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/13/backward/auto_ptr.h \
+ /usr/include/c++/13/pstl/glue_memory_defs.h \
+ /home/aloyst1/code/Warhammer-40k-RPG/include/items/item.h \
+ /home/aloyst1/code/Warhammer-40k-RPG/include/utility/faith.h \
+ /home/aloyst1/code/Warhammer-40k-RPG/include/utility/levelling.h \
+ /home/aloyst1/code/Warhammer-40k-RPG/include/weapons/weapon.h \
+ /home/aloyst1/code/Warhammer-40k-RPG/include/weapons/weapons.h \
+ /home/aloyst1/code/Warhammer-40k-RPG/include/weapons/melee/chainsword.h \
+ /home/aloyst1/code/Warhammer-40k-RPG/include/weapons/ranged/boltpistol.h \
+ /home/aloyst1/code/Warhammer-40k-RPG/include/weapons/ranged/stormbolter.h

@@ -273,6 +273,54 @@ src/events/battle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/events/battle.cpp.s
 .PHONY : src/events/battle.cpp.s
 
+src/events/enemy/enemyevents.o: src/events/enemy/enemyevents.cpp.o
+.PHONY : src/events/enemy/enemyevents.o
+
+# target to build an object file
+src/events/enemy/enemyevents.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/events/enemy/enemyevents.cpp.o
+.PHONY : src/events/enemy/enemyevents.cpp.o
+
+src/events/enemy/enemyevents.i: src/events/enemy/enemyevents.cpp.i
+.PHONY : src/events/enemy/enemyevents.i
+
+# target to preprocess a source file
+src/events/enemy/enemyevents.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/events/enemy/enemyevents.cpp.i
+.PHONY : src/events/enemy/enemyevents.cpp.i
+
+src/events/enemy/enemyevents.s: src/events/enemy/enemyevents.cpp.s
+.PHONY : src/events/enemy/enemyevents.s
+
+# target to generate assembly for a file
+src/events/enemy/enemyevents.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/events/enemy/enemyevents.cpp.s
+.PHONY : src/events/enemy/enemyevents.cpp.s
+
+src/events/player/playerevents.o: src/events/player/playerevents.cpp.o
+.PHONY : src/events/player/playerevents.o
+
+# target to build an object file
+src/events/player/playerevents.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/events/player/playerevents.cpp.o
+.PHONY : src/events/player/playerevents.cpp.o
+
+src/events/player/playerevents.i: src/events/player/playerevents.cpp.i
+.PHONY : src/events/player/playerevents.i
+
+# target to preprocess a source file
+src/events/player/playerevents.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/events/player/playerevents.cpp.i
+.PHONY : src/events/player/playerevents.cpp.i
+
+src/events/player/playerevents.s: src/events/player/playerevents.cpp.s
+.PHONY : src/events/player/playerevents.s
+
+# target to generate assembly for a file
+src/events/player/playerevents.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/events/player/playerevents.cpp.s
+.PHONY : src/events/player/playerevents.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -540,6 +588,12 @@ help:
 	@echo "... src/events/battle.o"
 	@echo "... src/events/battle.i"
 	@echo "... src/events/battle.s"
+	@echo "... src/events/enemy/enemyevents.o"
+	@echo "... src/events/enemy/enemyevents.i"
+	@echo "... src/events/enemy/enemyevents.s"
+	@echo "... src/events/player/playerevents.o"
+	@echo "... src/events/player/playerevents.i"
+	@echo "... src/events/player/playerevents.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
