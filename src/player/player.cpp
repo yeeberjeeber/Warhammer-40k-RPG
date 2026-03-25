@@ -5,13 +5,14 @@
 #include "items/item.h"
 #include "player/player.h"
 #include "utility/types.h"
+#include "weapons/weapon.h"
 using namespace std;
 
 Player::Player() : name("John Wingard"), 
                    health(StartingArmor, StartingHealth, StartingHealth), 
                    faith(StartingFaith, StartingFaith), 
                    level(), 
-                   stats(baseStr, baseDex, baseIntel, baseSpd) {};
+                   stats(baseStr, baseDex, baseIntel, baseSpd) { initialiseLoadout(); }
 
 Player::Player(const string& name, ui8 cHealth, ui8 mHealth, ui8 armor, ui8 cFaith, ui8 mFaith, ui8 cLevel, ui16 cEXP) : name(name), health(armor, cHealth, mHealth), faith(cFaith, mFaith), level(cLevel, cEXP) {};
 
@@ -48,6 +49,12 @@ void Player::calcEXP(ui16 gainedEXP) {
         displayStats();
         cout << "<--------------------------------------------------->" << endl;
     }
+}
+
+void Player::initialiseLoadout() {
+    Primary = make_unique<StormBolter>();
+    Secondary = make_unique<BoltPistol>();
+    Melee = make_unique<Chainsword>();
 }
 
 ui16 Player::getHealth() {

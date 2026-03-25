@@ -8,6 +8,8 @@
 #include "utility/stats.h"
 #include "utility/levelling.h"
 #include "utility/types.h"
+#include "weapons/weapon.h"
+#include "weapons/weapons.h"
 using namespace std;
 
 
@@ -32,10 +34,16 @@ private:
     ui16 meleeDamage = (baseStr * 1.5) + (baseDex * 0.25);
     ui16 rangedDamage = (baseDex * 1.5) + (baseStr * 0.25);
 
+    // weapons
+    unique_ptr<Weapon> Primary = nullptr;
+    unique_ptr<Weapon> Secondary = nullptr;
+    unique_ptr<Weapon> Melee = nullptr;
+
     HP health;
     Faith faith;
     StatBlock stats;
     Levelling level;
+    
 
 public:
     Player();
@@ -50,6 +58,7 @@ public:
     bool isAlive();
     void gainStats();
     ui16 getHealth();
+    void initialiseLoadout();
 
     void displayStatus() {
         cout << endl;
@@ -60,7 +69,7 @@ public:
         cout << "Level: " << level.getCurrentLevel() << endl;
         cout << "Current EXP: " << level.getCurrentEXP() << "/" << level.getEXPCap() << endl;
         cout << endl;
-    };
+    }
 
     void displayStats() {
         cout << endl;
