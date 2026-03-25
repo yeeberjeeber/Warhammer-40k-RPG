@@ -22,6 +22,8 @@ void BattleEvents::Battle(Player& player, Enemy& enemy) {
     }
 }
 
+// Tyranid swarm methods
+
 void BattleEvents::BattleMultipleTyranids(Player& player) {
     cout << "<------------------- GAME START ---------------->" << endl;
     auto enemies = SpawnTyranidEnemies();
@@ -87,16 +89,23 @@ void BattleEvents::SelectTarget(Player& player, vector<unique_ptr<Tyranid>>& ene
     cout << "You make another choice — engage from distance with bolter fire, or close the gap and let the chainsword do its work:" << endl;
 
     int choice;
-    cout << "[1] Bolter" << endl;
-    cout << "[2] Chainsword" << endl;
+    cout << "[1] " << player.getPrimaryName() << endl;
+    cout << "[2] " << player.getSecondaryName() << endl;
+    cout << "[3] " << player.getMeleeName() << endl;
     cin >> choice;
 
     switch(choice) {
         case 1:
-            enemies[target]->takeDamage(player.BolterFire());
+            enemies[target]->takeDamage(player.getPrimaryDamage());
+            cout << "Enemy takes " << player.getPrimaryDamage() << "damage!" << endl;
             break;
         case 2:
-            enemies[target]->takeDamage(player.ChainswordSlash());
+            enemies[target]->takeDamage(player.getSecondaryDamage());
+            cout << "Enemy takes " << player.getSecondaryDamage() << "damage!" << endl;
+            break;
+        case 3:
+            enemies[target]->takeDamage(player.getMeleeDamage());
+            cout << "Enemy takes " << player.getMeleeDamage() << "damage!" << endl;
             break;
         default:
             cout << "Invalid choice. This world is unforgiving." << endl;
@@ -104,20 +113,28 @@ void BattleEvents::SelectTarget(Player& player, vector<unique_ptr<Tyranid>>& ene
     }
 }
 
+// Tyranid single battle
 void BattleEvents::PlayerChoice(Player& player, Enemy& enemy) {
     cout << "You make a choice — engage from distance with bolter fire, or close the gap and let the chainsword do its work:" << endl;
 
     int choice;
-    cout << "[1] Bolter" << endl;
-    cout << "[2] Chainsword" << endl;
+    cout << "[1] " << player.getPrimaryName() << endl;
+    cout << "[2] " << player.getSecondaryName() << endl;
+    cout << "[3] " << player.getMeleeName() << endl;
     cin >> choice;
 
     switch(choice) {
         case 1:
-            enemy.takeDamage(player.BolterFire());
+            enemy.takeDamage(player.getPrimaryDamage());
+            cout << "Enemy takes " << player.getPrimaryDamage() << "damage!" << endl;
             break;
         case 2:
-            enemy.takeDamage(player.ChainswordSlash());
+            enemy.takeDamage(player.getSecondaryDamage());
+            cout << "Enemy takes " << player.getSecondaryDamage() << "damage!" << endl;
+            break;
+        case 3:
+            enemy.takeDamage(player.getMeleeDamage());
+            cout << "Enemy takes " << player.getMeleeDamage() << "damage!" << endl;
             break;
         default:
             cout << "Invalid choice. This world is unforgiving." << endl;
@@ -142,6 +159,7 @@ void BattleEvents::BattleEnd(Player& player) {
     player.displayStatus();
 }
 
+// Spawning Tyranid swarm
 vector<unique_ptr<Tyranid>> BattleEvents::SpawnTyranidEnemies() {
     vector<unique_ptr<Tyranid>> enemies;
 

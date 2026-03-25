@@ -5,7 +5,7 @@
 using namespace std;
 
 class Weapon {
-    protected:
+protected:
     string name;
     bool type;
     ui16 damage;
@@ -16,7 +16,7 @@ class Weapon {
 
     StatBlock stats;
 
-    public:
+public:
     string getName() const { return name; }
     int getDamage() const { return damage; }
     bool requiredStats(ui16 rStr, ui16 rDex, ui16 rIntel);

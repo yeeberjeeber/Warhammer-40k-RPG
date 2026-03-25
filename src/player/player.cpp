@@ -6,6 +6,7 @@
 #include "player/player.h"
 #include "utility/types.h"
 #include "weapons/weapon.h"
+#include "weapons/weapons.h"
 using namespace std;
 
 Player::Player() : name("John Wingard"), 
@@ -72,4 +73,28 @@ void Player::gainStats() {
     stats.gainIntel(4);
     stats.gainSpd(6);
     cout << "Your strength is bolstered." << endl;
+}
+
+string Player::getPrimaryName() {
+    return Primary->getName();
+}
+
+ui16 Player::getPrimaryDamage() {
+    return Primary->getDamage();
+}
+
+string Player::getSecondaryName() {
+    return Secondary->getName();
+}
+
+ui16 Player:: getSecondaryDamage() {
+    return Secondary->getDamage();
+}
+
+string Player::getMeleeName() {
+    return Melee->getName();
+}
+
+ui16 Player::getMeleeDamage() {
+    return Melee->getDamage();
 }

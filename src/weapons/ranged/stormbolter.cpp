@@ -5,7 +5,7 @@ using namespace std;
 
 StormBolter::StormBolter() {
     // stats
-    name = "Bolt Pistol";
+    name = "Storm Bolter";
     type = false;
     damage = 75;
 

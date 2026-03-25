@@ -179,6 +179,11 @@ CMakeFiles/warhammer.dir/src/events/battle.cpp.o: \
  /home/oyashi/Aloysius/warhammer-rpg/include/utility/faith.h \
  /home/oyashi/Aloysius/warhammer-rpg/include/utility/stats.h \
  /home/oyashi/Aloysius/warhammer-rpg/include/utility/levelling.h \
+ /home/oyashi/Aloysius/warhammer-rpg/include/weapons/weapon.h \
+ /home/oyashi/Aloysius/warhammer-rpg/include/weapons/weapons.h \
+ /home/oyashi/Aloysius/warhammer-rpg/include/weapons/melee/chainsword.h \
+ /home/oyashi/Aloysius/warhammer-rpg/include/weapons/ranged/boltpistol.h \
+ /home/oyashi/Aloysius/warhammer-rpg/include/weapons/ranged/stormbolter.h \
  /home/oyashi/Aloysius/warhammer-rpg/include/events/battle.h \
  /home/oyashi/Aloysius/warhammer-rpg/include/enemy/enemies.h \
  /home/oyashi/Aloysius/warhammer-rpg/include/enemy/tyranids/hormagaunt.h \

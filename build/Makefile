@@ -417,6 +417,102 @@ src/utility/stats.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/utility/stats.cpp.s
 .PHONY : src/utility/stats.cpp.s
 
+src/weapons/melee/chainsword.o: src/weapons/melee/chainsword.cpp.o
+.PHONY : src/weapons/melee/chainsword.o
+
+# target to build an object file
+src/weapons/melee/chainsword.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/weapons/melee/chainsword.cpp.o
+.PHONY : src/weapons/melee/chainsword.cpp.o
+
+src/weapons/melee/chainsword.i: src/weapons/melee/chainsword.cpp.i
+.PHONY : src/weapons/melee/chainsword.i
+
+# target to preprocess a source file
+src/weapons/melee/chainsword.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/weapons/melee/chainsword.cpp.i
+.PHONY : src/weapons/melee/chainsword.cpp.i
+
+src/weapons/melee/chainsword.s: src/weapons/melee/chainsword.cpp.s
+.PHONY : src/weapons/melee/chainsword.s
+
+# target to generate assembly for a file
+src/weapons/melee/chainsword.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/weapons/melee/chainsword.cpp.s
+.PHONY : src/weapons/melee/chainsword.cpp.s
+
+src/weapons/ranged/boltpistol.o: src/weapons/ranged/boltpistol.cpp.o
+.PHONY : src/weapons/ranged/boltpistol.o
+
+# target to build an object file
+src/weapons/ranged/boltpistol.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/weapons/ranged/boltpistol.cpp.o
+.PHONY : src/weapons/ranged/boltpistol.cpp.o
+
+src/weapons/ranged/boltpistol.i: src/weapons/ranged/boltpistol.cpp.i
+.PHONY : src/weapons/ranged/boltpistol.i
+
+# target to preprocess a source file
+src/weapons/ranged/boltpistol.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/weapons/ranged/boltpistol.cpp.i
+.PHONY : src/weapons/ranged/boltpistol.cpp.i
+
+src/weapons/ranged/boltpistol.s: src/weapons/ranged/boltpistol.cpp.s
+.PHONY : src/weapons/ranged/boltpistol.s
+
+# target to generate assembly for a file
+src/weapons/ranged/boltpistol.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/weapons/ranged/boltpistol.cpp.s
+.PHONY : src/weapons/ranged/boltpistol.cpp.s
+
+src/weapons/ranged/stormbolter.o: src/weapons/ranged/stormbolter.cpp.o
+.PHONY : src/weapons/ranged/stormbolter.o
+
+# target to build an object file
+src/weapons/ranged/stormbolter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/weapons/ranged/stormbolter.cpp.o
+.PHONY : src/weapons/ranged/stormbolter.cpp.o
+
+src/weapons/ranged/stormbolter.i: src/weapons/ranged/stormbolter.cpp.i
+.PHONY : src/weapons/ranged/stormbolter.i
+
+# target to preprocess a source file
+src/weapons/ranged/stormbolter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/weapons/ranged/stormbolter.cpp.i
+.PHONY : src/weapons/ranged/stormbolter.cpp.i
+
+src/weapons/ranged/stormbolter.s: src/weapons/ranged/stormbolter.cpp.s
+.PHONY : src/weapons/ranged/stormbolter.s
+
+# target to generate assembly for a file
+src/weapons/ranged/stormbolter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/weapons/ranged/stormbolter.cpp.s
+.PHONY : src/weapons/ranged/stormbolter.cpp.s
+
+src/weapons/weapon.o: src/weapons/weapon.cpp.o
+.PHONY : src/weapons/weapon.o
+
+# target to build an object file
+src/weapons/weapon.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.o
+.PHONY : src/weapons/weapon.cpp.o
+
+src/weapons/weapon.i: src/weapons/weapon.cpp.i
+.PHONY : src/weapons/weapon.i
+
+# target to preprocess a source file
+src/weapons/weapon.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.i
+.PHONY : src/weapons/weapon.cpp.i
+
+src/weapons/weapon.s: src/weapons/weapon.cpp.s
+.PHONY : src/weapons/weapon.s
+
+# target to generate assembly for a file
+src/weapons/weapon.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/warhammer.dir/build.make CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.s
+.PHONY : src/weapons/weapon.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -462,6 +558,18 @@ help:
 	@echo "... src/utility/stats.o"
 	@echo "... src/utility/stats.i"
 	@echo "... src/utility/stats.s"
+	@echo "... src/weapons/melee/chainsword.o"
+	@echo "... src/weapons/melee/chainsword.i"
+	@echo "... src/weapons/melee/chainsword.s"
+	@echo "... src/weapons/ranged/boltpistol.o"
+	@echo "... src/weapons/ranged/boltpistol.i"
+	@echo "... src/weapons/ranged/boltpistol.s"
+	@echo "... src/weapons/ranged/stormbolter.o"
+	@echo "... src/weapons/ranged/stormbolter.i"
+	@echo "... src/weapons/ranged/stormbolter.s"
+	@echo "... src/weapons/weapon.o"
+	@echo "... src/weapons/weapon.i"
+	@echo "... src/weapons/weapon.s"
 .PHONY : help
 
 

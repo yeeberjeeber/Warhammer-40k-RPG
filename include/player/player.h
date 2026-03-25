@@ -60,6 +60,14 @@ public:
     ui16 getHealth();
     void initialiseLoadout();
 
+    // get weapon details
+    string getPrimaryName();
+    ui16 getPrimaryDamage();
+    string getSecondaryName();
+    ui16 getSecondaryDamage();
+    string getMeleeName();
+    ui16 getMeleeDamage();
+
     void displayStatus() {
         cout << endl;
         cout << "Name: " << name << endl;

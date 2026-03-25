@@ -13,4 +13,8 @@ add_executable(warhammer
        src/enemy/tyranids/tyranid.cpp
        src/enemy/tyranids/carnifex.cpp
        src/enemy/tyranids/hormagaunt.cpp
-       src/enemy/tyranids/termagaunt.cpp)
+       src/enemy/tyranids/termagaunt.cpp
+       src/weapons/melee/chainsword.cpp
+       src/weapons/ranged/boltpistol.cpp
+       src/weapons/ranged/stormbolter.cpp
+       src/weapons/weapon.cpp)

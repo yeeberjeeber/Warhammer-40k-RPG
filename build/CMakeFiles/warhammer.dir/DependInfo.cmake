@@ -20,6 +20,10 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/oyashi/Aloysius/warhammer-rpg/src/utility/hp.cpp" "CMakeFiles/warhammer.dir/src/utility/hp.cpp.o" "gcc" "CMakeFiles/warhammer.dir/src/utility/hp.cpp.o.d"
   "/home/oyashi/Aloysius/warhammer-rpg/src/utility/levelling.cpp" "CMakeFiles/warhammer.dir/src/utility/levelling.cpp.o" "gcc" "CMakeFiles/warhammer.dir/src/utility/levelling.cpp.o.d"
   "/home/oyashi/Aloysius/warhammer-rpg/src/utility/stats.cpp" "CMakeFiles/warhammer.dir/src/utility/stats.cpp.o" "gcc" "CMakeFiles/warhammer.dir/src/utility/stats.cpp.o.d"
+  "/home/oyashi/Aloysius/warhammer-rpg/src/weapons/melee/chainsword.cpp" "CMakeFiles/warhammer.dir/src/weapons/melee/chainsword.cpp.o" "gcc" "CMakeFiles/warhammer.dir/src/weapons/melee/chainsword.cpp.o.d"
+  "/home/oyashi/Aloysius/warhammer-rpg/src/weapons/ranged/boltpistol.cpp" "CMakeFiles/warhammer.dir/src/weapons/ranged/boltpistol.cpp.o" "gcc" "CMakeFiles/warhammer.dir/src/weapons/ranged/boltpistol.cpp.o.d"
+  "/home/oyashi/Aloysius/warhammer-rpg/src/weapons/ranged/stormbolter.cpp" "CMakeFiles/warhammer.dir/src/weapons/ranged/stormbolter.cpp.o" "gcc" "CMakeFiles/warhammer.dir/src/weapons/ranged/stormbolter.cpp.o.d"
+  "/home/oyashi/Aloysius/warhammer-rpg/src/weapons/weapon.cpp" "CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.o" "gcc" "CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

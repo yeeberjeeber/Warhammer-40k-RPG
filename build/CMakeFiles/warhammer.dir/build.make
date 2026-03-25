@@ -237,6 +237,62 @@ CMakeFiles/warhammer.dir/src/enemy/tyranids/termagaunt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/warhammer.dir/src/enemy/tyranids/termagaunt.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oyashi/Aloysius/warhammer-rpg/src/enemy/tyranids/termagaunt.cpp -o CMakeFiles/warhammer.dir/src/enemy/tyranids/termagaunt.cpp.s
 
+CMakeFiles/warhammer.dir/src/weapons/melee/chainsword.cpp.o: CMakeFiles/warhammer.dir/flags.make
+CMakeFiles/warhammer.dir/src/weapons/melee/chainsword.cpp.o: /home/oyashi/Aloysius/warhammer-rpg/src/weapons/melee/chainsword.cpp
+CMakeFiles/warhammer.dir/src/weapons/melee/chainsword.cpp.o: CMakeFiles/warhammer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/oyashi/Aloysius/warhammer-rpg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/warhammer.dir/src/weapons/melee/chainsword.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/warhammer.dir/src/weapons/melee/chainsword.cpp.o -MF CMakeFiles/warhammer.dir/src/weapons/melee/chainsword.cpp.o.d -o CMakeFiles/warhammer.dir/src/weapons/melee/chainsword.cpp.o -c /home/oyashi/Aloysius/warhammer-rpg/src/weapons/melee/chainsword.cpp
+
+CMakeFiles/warhammer.dir/src/weapons/melee/chainsword.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/warhammer.dir/src/weapons/melee/chainsword.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oyashi/Aloysius/warhammer-rpg/src/weapons/melee/chainsword.cpp > CMakeFiles/warhammer.dir/src/weapons/melee/chainsword.cpp.i
+
+CMakeFiles/warhammer.dir/src/weapons/melee/chainsword.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/warhammer.dir/src/weapons/melee/chainsword.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oyashi/Aloysius/warhammer-rpg/src/weapons/melee/chainsword.cpp -o CMakeFiles/warhammer.dir/src/weapons/melee/chainsword.cpp.s
+
+CMakeFiles/warhammer.dir/src/weapons/ranged/boltpistol.cpp.o: CMakeFiles/warhammer.dir/flags.make
+CMakeFiles/warhammer.dir/src/weapons/ranged/boltpistol.cpp.o: /home/oyashi/Aloysius/warhammer-rpg/src/weapons/ranged/boltpistol.cpp
+CMakeFiles/warhammer.dir/src/weapons/ranged/boltpistol.cpp.o: CMakeFiles/warhammer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/oyashi/Aloysius/warhammer-rpg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/warhammer.dir/src/weapons/ranged/boltpistol.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/warhammer.dir/src/weapons/ranged/boltpistol.cpp.o -MF CMakeFiles/warhammer.dir/src/weapons/ranged/boltpistol.cpp.o.d -o CMakeFiles/warhammer.dir/src/weapons/ranged/boltpistol.cpp.o -c /home/oyashi/Aloysius/warhammer-rpg/src/weapons/ranged/boltpistol.cpp
+
+CMakeFiles/warhammer.dir/src/weapons/ranged/boltpistol.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/warhammer.dir/src/weapons/ranged/boltpistol.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oyashi/Aloysius/warhammer-rpg/src/weapons/ranged/boltpistol.cpp > CMakeFiles/warhammer.dir/src/weapons/ranged/boltpistol.cpp.i
+
+CMakeFiles/warhammer.dir/src/weapons/ranged/boltpistol.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/warhammer.dir/src/weapons/ranged/boltpistol.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oyashi/Aloysius/warhammer-rpg/src/weapons/ranged/boltpistol.cpp -o CMakeFiles/warhammer.dir/src/weapons/ranged/boltpistol.cpp.s
+
+CMakeFiles/warhammer.dir/src/weapons/ranged/stormbolter.cpp.o: CMakeFiles/warhammer.dir/flags.make
+CMakeFiles/warhammer.dir/src/weapons/ranged/stormbolter.cpp.o: /home/oyashi/Aloysius/warhammer-rpg/src/weapons/ranged/stormbolter.cpp
+CMakeFiles/warhammer.dir/src/weapons/ranged/stormbolter.cpp.o: CMakeFiles/warhammer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/oyashi/Aloysius/warhammer-rpg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/warhammer.dir/src/weapons/ranged/stormbolter.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/warhammer.dir/src/weapons/ranged/stormbolter.cpp.o -MF CMakeFiles/warhammer.dir/src/weapons/ranged/stormbolter.cpp.o.d -o CMakeFiles/warhammer.dir/src/weapons/ranged/stormbolter.cpp.o -c /home/oyashi/Aloysius/warhammer-rpg/src/weapons/ranged/stormbolter.cpp
+
+CMakeFiles/warhammer.dir/src/weapons/ranged/stormbolter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/warhammer.dir/src/weapons/ranged/stormbolter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oyashi/Aloysius/warhammer-rpg/src/weapons/ranged/stormbolter.cpp > CMakeFiles/warhammer.dir/src/weapons/ranged/stormbolter.cpp.i
+
+CMakeFiles/warhammer.dir/src/weapons/ranged/stormbolter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/warhammer.dir/src/weapons/ranged/stormbolter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oyashi/Aloysius/warhammer-rpg/src/weapons/ranged/stormbolter.cpp -o CMakeFiles/warhammer.dir/src/weapons/ranged/stormbolter.cpp.s
+
+CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.o: CMakeFiles/warhammer.dir/flags.make
+CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.o: /home/oyashi/Aloysius/warhammer-rpg/src/weapons/weapon.cpp
+CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.o: CMakeFiles/warhammer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/oyashi/Aloysius/warhammer-rpg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.o -MF CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.o.d -o CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.o -c /home/oyashi/Aloysius/warhammer-rpg/src/weapons/weapon.cpp
+
+CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oyashi/Aloysius/warhammer-rpg/src/weapons/weapon.cpp > CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.i
+
+CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oyashi/Aloysius/warhammer-rpg/src/weapons/weapon.cpp -o CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.s
+
 # Object files for target warhammer
 warhammer_OBJECTS = \
 "CMakeFiles/warhammer.dir/src/main.cpp.o" \
@@ -250,7 +306,11 @@ warhammer_OBJECTS = \
 "CMakeFiles/warhammer.dir/src/enemy/tyranids/tyranid.cpp.o" \
 "CMakeFiles/warhammer.dir/src/enemy/tyranids/carnifex.cpp.o" \
 "CMakeFiles/warhammer.dir/src/enemy/tyranids/hormagaunt.cpp.o" \
-"CMakeFiles/warhammer.dir/src/enemy/tyranids/termagaunt.cpp.o"
+"CMakeFiles/warhammer.dir/src/enemy/tyranids/termagaunt.cpp.o" \
+"CMakeFiles/warhammer.dir/src/weapons/melee/chainsword.cpp.o" \
+"CMakeFiles/warhammer.dir/src/weapons/ranged/boltpistol.cpp.o" \
+"CMakeFiles/warhammer.dir/src/weapons/ranged/stormbolter.cpp.o" \
+"CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.o"
 
 # External object files for target warhammer
 warhammer_EXTERNAL_OBJECTS =
@@ -267,9 +327,13 @@ warhammer: CMakeFiles/warhammer.dir/src/enemy/tyranids/tyranid.cpp.o
 warhammer: CMakeFiles/warhammer.dir/src/enemy/tyranids/carnifex.cpp.o
 warhammer: CMakeFiles/warhammer.dir/src/enemy/tyranids/hormagaunt.cpp.o
 warhammer: CMakeFiles/warhammer.dir/src/enemy/tyranids/termagaunt.cpp.o
+warhammer: CMakeFiles/warhammer.dir/src/weapons/melee/chainsword.cpp.o
+warhammer: CMakeFiles/warhammer.dir/src/weapons/ranged/boltpistol.cpp.o
+warhammer: CMakeFiles/warhammer.dir/src/weapons/ranged/stormbolter.cpp.o
+warhammer: CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.o
 warhammer: CMakeFiles/warhammer.dir/build.make
 warhammer: CMakeFiles/warhammer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/oyashi/Aloysius/warhammer-rpg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable warhammer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/oyashi/Aloysius/warhammer-rpg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable warhammer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/warhammer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
