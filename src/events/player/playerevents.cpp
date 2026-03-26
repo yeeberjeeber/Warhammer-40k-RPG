@@ -72,6 +72,13 @@ void PlayerEvents::PlayerChoice(Player& player, Enemy& enemy) {
     SelectChoice(choice, player, enemy);
 }
 
+void PlayerEvents::ScanEnemy(Enemy& enemy) {
+    cout << "Upon contact with a hostile, your helmet's integrated scanner pulls up threat assessment data:" << endl;
+    enemy.displayStats();
+    cout << "You grip your weapon, ready for battle." << endl;
+    cout << endl;
+}
+
 void PlayerEvents::PlayerOption(Player& player, Enemy& enemy) {
     ui16 choice;
     cout << "[1] Attack" << endl;
@@ -81,6 +88,7 @@ void PlayerEvents::PlayerOption(Player& player, Enemy& enemy) {
     cin >> choice;
     switch(choice) {
         case 1:
+            ScanEnemy(enemy);
             PlayerChoice(player, enemy);
             break;
         case 4:
@@ -90,11 +98,4 @@ void PlayerEvents::PlayerOption(Player& player, Enemy& enemy) {
             cout << "Invalid choice. This world is unforgiving." << endl;
             break;
     }
-}
-
-void PlayerEvents::ScanEnemy(Enemy& enemy) {
-    cout << "Upon contact with a hostile, your helmet's integrated scanner pulls up threat assessment data:" << endl;
-    enemy.displayStats();
-    cout << "You grip your weapon, ready for war." << endl;
-    cout << endl;
 }

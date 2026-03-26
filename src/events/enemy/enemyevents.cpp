@@ -11,29 +11,34 @@ mt& EnemyEvents::getRNG() {
 }
 
 // Spawning Tyranid swarm
-vector<unique_ptr<Tyranid>> EnemyEvents::SpawnTyranidEnemies() {
+vector<unique_ptr<Tyranid>> EnemyEvents::SpawnTyranidEnemies(Player& player) {
     vector<unique_ptr<Tyranid>> enemies;
+    vector<unique_ptr<Tyranid>> enemyType;
 
-    ui16 numHormagaunts = rand() % 5 + 1;
-    ui16 numTermagaunts = rand() % 4 + 1;
-    ui16 numCarnifexes = rand() % 1 + 1;
+    enemyType.push_back(make_unique<Hormagaunt>());
+    enemyType.push_back(make_unique<Termagaunt>());
+    enemyType.push_back(make_unique<Carnifex>());
 
-    cout << endl;
-    cout << numHormagaunts << " Hormgaunts appeared!" << endl;
-    cout << numTermagaunts << " Termagaunts appeared!" << endl;
-    cout << numCarnifexes << " Carnifexes appeared!" << endl;
+    for (auto& e : enemyType) {
+        if (player.getCurrentLevel() < e->getMinLevel()) continue;
+        ui16 maxVariants = min(5, 1 + (player.getCurrentLevel() / e->getWeightage() * 1));
 
-    // populating enemies vector
-    for (int i = 0; i < numHormagaunts; i++) {
-        enemies.push_back(make_unique<Hormagaunt>()); // all Hormagaunts are the same
-    }
+        uniform_int_distribution<int> dist(1, maxVariants);
+        int count = dist(rng);
 
-    for (int i = 0; i < numTermagaunts; i++) {
-        enemies.push_back(make_unique<Termagaunt>());
-    }
+        cout << count << " " << e->getName() << "(s) appeared!" << endl;
 
-    for (int i = 0; i < numCarnifexes; i++) {
-        enemies.push_back(make_unique<Carnifex>());
+         for (int i = 0; i < count; i++) {
+            if (e->getName() == "Hormagaunt") {
+                enemies.push_back(make_unique<Hormagaunt>());
+            }
+            else if (e->getName() == "Termagaunt") {
+                enemies.push_back(make_unique<Termagaunt>());
+            }
+            else if (e->getName() == "Carnifex") {
+                enemies.push_back(make_unique<Carnifex>());
+            }
+         }
     }
 
     // setting up synapse links
@@ -50,4 +55,14 @@ vector<unique_ptr<Tyranid>> EnemyEvents::SpawnTyranidEnemies() {
     shuffle(begin(enemies), end(enemies), getRNG()); // shuffle out the vector of Tyranids
 
     return enemies;
+}
+
+bool EnemyEvents::IsSingleEnemy(Player& player, double baseChanceSingle) {
+    //chance decreases as player level increases
+    double chance = max(0.2, baseChanceSingle - 0.05 * player.getCurrentLevel());
+
+    uniform_real_distribution<double> dist(0.0, 1.0);
+    double roll = dist(rng);
+
+    return roll < chance; // true = single enemy, false = swarm
 }

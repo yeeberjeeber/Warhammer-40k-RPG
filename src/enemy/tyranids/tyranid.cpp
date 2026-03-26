@@ -7,7 +7,6 @@
 #include <vector>
 using namespace std;
 
-
 void Tyranid::synapseLink(vector<Tyranid*>& tyranids) {
     Tyranid* highest = nullptr;
 

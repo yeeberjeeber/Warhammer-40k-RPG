@@ -12,6 +12,7 @@ Carnifex::Carnifex() {
     BaseDex = 17;
     BaseIntel = 20;
     BaseSpd = 15;
+    MinLevel = 1;
 
     // exp given
     EXP = 120;

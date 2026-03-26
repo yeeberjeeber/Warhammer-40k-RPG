@@ -12,6 +12,7 @@ private:
     mt rng { random_device {}() };
 
 public:
-    vector<unique_ptr<Tyranid>> SpawnTyranidEnemies();
     mt& getRNG();
+    vector<unique_ptr<Tyranid>> SpawnTyranidEnemies(Player& player);
+    bool IsSingleEnemy(Player& player, double baseChanceSingle = 0.6);
 };

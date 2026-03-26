@@ -496,11 +496,16 @@ CMakeFiles/warhammer.dir/src/enemy/tyranids/hormagaunt.cpp.o: /home/aloyst1/code
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/c++/13/algorithm \
+  /usr/include/c++/13/backward/auto_ptr.h \
   /usr/include/c++/13/backward/binders.h \
   /usr/include/c++/13/bit \
   /usr/include/c++/13/bits/algorithmfwd.h \
+  /usr/include/c++/13/bits/align.h \
   /usr/include/c++/13/bits/alloc_traits.h \
+  /usr/include/c++/13/bits/allocated_ptr.h \
   /usr/include/c++/13/bits/allocator.h \
+  /usr/include/c++/13/bits/atomic_base.h \
+  /usr/include/c++/13/bits/atomic_lockfree_defines.h \
   /usr/include/c++/13/bits/basic_ios.h \
   /usr/include/c++/13/bits/basic_ios.tcc \
   /usr/include/c++/13/bits/basic_string.h \
@@ -540,6 +545,9 @@ CMakeFiles/warhammer.dir/src/enemy/tyranids/hormagaunt.cpp.o: /home/aloyst1/code
   /usr/include/c++/13/bits/range_access.h \
   /usr/include/c++/13/bits/refwrap.h \
   /usr/include/c++/13/bits/requires_hosted.h \
+  /usr/include/c++/13/bits/shared_ptr.h \
+  /usr/include/c++/13/bits/shared_ptr_atomic.h \
+  /usr/include/c++/13/bits/shared_ptr_base.h \
   /usr/include/c++/13/bits/specfun.h \
   /usr/include/c++/13/bits/std_abs.h \
   /usr/include/c++/13/bits/stl_algo.h \
@@ -553,6 +561,7 @@ CMakeFiles/warhammer.dir/src/enemy/tyranids/hormagaunt.cpp.o: /home/aloyst1/code
   /usr/include/c++/13/bits/stl_iterator_base_types.h \
   /usr/include/c++/13/bits/stl_numeric.h \
   /usr/include/c++/13/bits/stl_pair.h \
+  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
   /usr/include/c++/13/bits/stl_tempbuf.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
   /usr/include/c++/13/bits/stl_vector.h \
@@ -561,6 +570,7 @@ CMakeFiles/warhammer.dir/src/enemy/tyranids/hormagaunt.cpp.o: /home/aloyst1/code
   /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
   /usr/include/c++/13/bits/uniform_int_dist.h \
+  /usr/include/c++/13/bits/unique_ptr.h \
   /usr/include/c++/13/bits/uses_allocator.h \
   /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
@@ -578,8 +588,10 @@ CMakeFiles/warhammer.dir/src/enemy/tyranids/hormagaunt.cpp.o: /home/aloyst1/code
   /usr/include/c++/13/debug/assertions.h \
   /usr/include/c++/13/debug/debug.h \
   /usr/include/c++/13/exception \
+  /usr/include/c++/13/ext/aligned_buffer.h \
   /usr/include/c++/13/ext/alloc_traits.h \
   /usr/include/c++/13/ext/atomicity.h \
+  /usr/include/c++/13/ext/concurrence.h \
   /usr/include/c++/13/ext/numeric_traits.h \
   /usr/include/c++/13/ext/string_conversions.h \
   /usr/include/c++/13/ext/type_traits.h \
@@ -589,11 +601,13 @@ CMakeFiles/warhammer.dir/src/enemy/tyranids/hormagaunt.cpp.o: /home/aloyst1/code
   /usr/include/c++/13/iostream \
   /usr/include/c++/13/istream \
   /usr/include/c++/13/limits \
+  /usr/include/c++/13/memory \
   /usr/include/c++/13/new \
   /usr/include/c++/13/numeric \
   /usr/include/c++/13/ostream \
   /usr/include/c++/13/pstl/execution_defs.h \
   /usr/include/c++/13/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/13/pstl/glue_memory_defs.h \
   /usr/include/c++/13/pstl/glue_numeric_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/random \
@@ -4491,27 +4505,7 @@ CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.o: /home/aloyst1/code/Warhammer-
 
 /home/aloyst1/code/Warhammer-40k-RPG/src/events/enemy/enemyevents.cpp:
 
-/usr/include/c++/13/memory:
-
-/usr/include/c++/13/ext/concurrence.h:
-
-/usr/include/c++/13/ext/aligned_buffer.h:
-
 /usr/include/c++/13/ctime:
-
-/usr/include/c++/13/bits/stl_raw_storage_iter.h:
-
-/usr/include/c++/13/bits/shared_ptr_atomic.h:
-
-/usr/include/c++/13/bits/shared_ptr.h:
-
-/usr/include/c++/13/bits/atomic_lockfree_defines.h:
-
-/usr/include/c++/13/bits/atomic_base.h:
-
-/usr/include/c++/13/bits/align.h:
-
-/usr/include/c++/13/backward/auto_ptr.h:
 
 /home/aloyst1/code/Warhammer-40k-RPG/include/weapons/weapons.h:
 
@@ -4520,6 +4514,22 @@ CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.o: /home/aloyst1/code/Warhammer-
 /home/aloyst1/code/Warhammer-40k-RPG/include/weapons/ranged/boltpistol.h:
 
 /home/aloyst1/code/Warhammer-40k-RPG/include/weapons/melee/chainsword.h:
+
+/home/aloyst1/code/Warhammer-40k-RPG/include/utility/levelling.h:
+
+/home/aloyst1/code/Warhammer-40k-RPG/include/items/item.h:
+
+/home/aloyst1/code/Warhammer-40k-RPG/include/events/player/playerevents.h:
+
+/home/aloyst1/code/Warhammer-40k-RPG/include/events/battle.h:
+
+/home/aloyst1/code/Warhammer-40k-RPG/include/enemy/enemies.h:
+
+/home/aloyst1/code/Warhammer-40k-RPG/include/enemy/tyranids/termagaunt.h:
+
+/home/aloyst1/code/Warhammer-40k-RPG/src/enemy/tyranids/termagaunt.cpp:
+
+/usr/include/c++/13/memory:
 
 /usr/include/c++/13/tr1/riemann_zeta.tcc:
 
@@ -4542,6 +4552,8 @@ CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.o: /home/aloyst1/code/Warhammer-
 /usr/include/c++/13/pstl/pstl_config.h:
 
 /usr/include/c++/13/pstl/glue_algorithm_defs.h:
+
+/usr/include/c++/13/ext/concurrence.h:
 
 /home/aloyst1/code/Warhammer-40k-RPG/src/utility/stats.cpp:
 
@@ -4593,6 +4605,8 @@ CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.o: /home/aloyst1/code/Warhammer-
 
 /usr/include/c++/13/bits/uses_allocator_args.h:
 
+/usr/include/c++/13/bits/atomic_base.h:
+
 /usr/include/c++/13/pstl/glue_memory_defs.h:
 
 /usr/include/c++/13/exception:
@@ -4604,6 +4618,10 @@ CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.o: /home/aloyst1/code/Warhammer-
 /usr/include/c++/13/bits/uses_allocator.h:
 
 /usr/include/c++/13/bits/postypes.h:
+
+/home/aloyst1/code/Warhammer-40k-RPG/include/events/enemy/enemyevents.h:
+
+/usr/include/c++/13/bits/std_abs.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
@@ -4640,6 +4658,10 @@ CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.o: /home/aloyst1/code/Warhammer-
 /usr/include/c++/13/bits/algorithmfwd.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+
+/home/aloyst1/code/Warhammer-40k-RPG/src/events/battle.cpp:
+
+/usr/include/c++/13/bits/alloc_traits.h:
 
 /usr/include/c++/13/bits/concept_check.h:
 
@@ -4703,10 +4725,6 @@ CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.o: /home/aloyst1/code/Warhammer-
 
 /usr/include/c++/13/bits/string_view.tcc:
 
-/usr/include/c++/13/bits/alloc_traits.h:
-
-/home/aloyst1/code/Warhammer-40k-RPG/src/events/battle.cpp:
-
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
 /usr/include/c++/13/bits/exception_defines.h:
@@ -4728,10 +4746,6 @@ CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.o: /home/aloyst1/code/Warhammer-
 /usr/include/c++/13/cerrno:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
-
-/usr/include/c++/13/bits/unique_ptr.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
 /usr/include/c++/13/cwctype:
 
@@ -4837,8 +4851,6 @@ CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.o: /home/aloyst1/code/Warhammer-
 
 /usr/include/c++/13/stdexcept:
 
-/home/aloyst1/code/Warhammer-40k-RPG/src/enemy/tyranids/termagaunt.cpp:
-
 /usr/include/c++/13/bits/refwrap.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
@@ -4869,9 +4881,15 @@ CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.o: /home/aloyst1/code/Warhammer-
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
+/home/aloyst1/code/Warhammer-40k-RPG/src/enemy/tyranids/tyranid.cpp:
+
+/usr/include/locale.h:
+
 /usr/include/c++/13/bits/utility.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/usr/include/c++/13/ext/aligned_buffer.h:
 
 /usr/include/pthread.h:
 
@@ -4896,6 +4914,8 @@ CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.o: /home/aloyst1/code/Warhammer-
 /usr/include/c++/13/bits/stl_iterator.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/c++/13/bits/atomic_lockfree_defines.h:
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
@@ -4925,11 +4945,21 @@ CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.o: /home/aloyst1/code/Warhammer-
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
+/home/aloyst1/code/Warhammer-40k-RPG/src/utility/levelling.cpp:
+
+/home/aloyst1/code/Warhammer-40k-RPG/include/player/player.h:
+
+/usr/include/c++/13/string_view:
+
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+
+/usr/include/c++/13/bits/stl_raw_storage_iter.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
@@ -4949,6 +4979,8 @@ CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.o: /home/aloyst1/code/Warhammer-
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
+/usr/include/c++/13/bits/shared_ptr.h:
+
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
@@ -4962,8 +4994,6 @@ CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.o: /home/aloyst1/code/Warhammer-
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
-
-/home/aloyst1/code/Warhammer-40k-RPG/include/enemy/tyranids/termagaunt.h:
 
 /usr/include/math.h:
 
@@ -4999,11 +5029,15 @@ CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.o: /home/aloyst1/code/Warhammer-
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
-/home/aloyst1/code/Warhammer-40k-RPG/include/enemy/enemies.h:
-
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/usr/include/c++/13/bits/align.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+
+/usr/include/c++/13/bits/unique_ptr.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
@@ -5037,26 +5071,6 @@ CMakeFiles/warhammer.dir/src/weapons/weapon.cpp.o: /home/aloyst1/code/Warhammer-
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
 
-/usr/include/locale.h:
+/usr/include/c++/13/backward/auto_ptr.h:
 
-/home/aloyst1/code/Warhammer-40k-RPG/src/enemy/tyranids/tyranid.cpp:
-
-/home/aloyst1/code/Warhammer-40k-RPG/include/events/battle.h:
-
-/usr/include/c++/13/bits/std_abs.h:
-
-/home/aloyst1/code/Warhammer-40k-RPG/include/events/enemy/enemyevents.h:
-
-/home/aloyst1/code/Warhammer-40k-RPG/include/events/player/playerevents.h:
-
-/home/aloyst1/code/Warhammer-40k-RPG/include/items/item.h:
-
-/home/aloyst1/code/Warhammer-40k-RPG/src/utility/levelling.cpp:
-
-/usr/include/c++/13/string_view:
-
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
-
-/home/aloyst1/code/Warhammer-40k-RPG/include/player/player.h:
-
-/home/aloyst1/code/Warhammer-40k-RPG/include/utility/levelling.h:
+/usr/include/c++/13/bits/shared_ptr_atomic.h:

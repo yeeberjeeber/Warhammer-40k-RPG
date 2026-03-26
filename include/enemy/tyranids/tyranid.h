@@ -2,11 +2,10 @@
     #include "enemy/enemy.h"
     #include "utility/types.h"
     #include <vector>
+    using namespace std;
 
     class Tyranid : public Enemy {
-
     protected:
-        ui16 weightage;
         Tyranid* synapseSource = nullptr;
 
     public:

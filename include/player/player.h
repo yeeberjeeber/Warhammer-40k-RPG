@@ -83,4 +83,8 @@ public:
         cout << "Speed: " << stats.getSpeed() << endl;
         cout << endl;
     }
+
+    ui16 getCurrentLevel() {
+        return level.getCurrentLevel();
+    }
 };  

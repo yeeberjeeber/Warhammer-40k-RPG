@@ -9,8 +9,6 @@ private:
     ui16 CurrentHealth;
     ui16 MaxHealth;
     
-    
-
 public:
     // default constructor
     HP();

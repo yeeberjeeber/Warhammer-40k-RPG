@@ -13,6 +13,7 @@ Termagaunt::Termagaunt() {
     BaseDex = 6;
     BaseIntel = 1;
     BaseSpd = 17;
+    MinLevel = 1;
 
     // exp given
     EXP = 50;

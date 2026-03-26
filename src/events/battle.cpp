@@ -26,7 +26,7 @@ void BattleEvents::Battle(Player& player, Enemy& enemy) {
 
 void BattleEvents::BattleMultipleTyranids(Player& player) {
     cout << "<------------------- GAME START ---------------->" << endl;
-    auto enemies = eEvents.SpawnTyranidEnemies();
+    auto enemies = eEvents.SpawnTyranidEnemies(player);
 
     for (auto& en : enemies) {
         if (!player.isAlive()) break;
@@ -113,7 +113,6 @@ void BattleEvents::BattleStart(Player& player, Enemy& enemy) {
     cout << "Player Stats:" << endl;
     player.displayStats();
     cout << endl;
-    pEvents.ScanEnemy(enemy);
 }
 
 void BattleEvents::BattleEnd(Player& player) {

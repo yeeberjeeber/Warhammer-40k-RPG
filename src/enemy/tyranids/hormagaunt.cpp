@@ -2,6 +2,7 @@
 #include "utility/types.h"
 #include "enemy/tyranids/hormagaunt.h"
 #include "utility/hp.h"
+#include <memory>
 using namespace std;
 
 Hormagaunt::Hormagaunt() {
@@ -14,6 +15,7 @@ Hormagaunt::Hormagaunt() {
     BaseDex = 6;
     BaseIntel = 1;
     BaseSpd = 17;
+    MinLevel = 1;
 
     // exp given
     EXP = 50;
@@ -22,4 +24,4 @@ Hormagaunt::Hormagaunt() {
     health = HP(BaseArmor, BaseHealth, BaseHealth);
     stats = StatBlock(BaseStr, BaseDex, BaseIntel, BaseSpd);
 
-}
+}   
