@@ -33,14 +33,13 @@ void Player::calcEXP(ui16 gainedEXP) {
     if (level.gainEXP(gainedEXP)) {
         health.setMaxHP(50);
         health.fullHeal();
-        cout << endl;
-        cout << "<------------------- STATUS DISPLAY ---------------->" << endl;
+        cout << "\n<------------------- STATUS DISPLAY ---------------->" << endl;
         cout << "Current Status: " << endl;
         displayStatus();
         gainStats();
         cout << "New Stats:" << endl;
         displayStats();
-        cout << "<--------------------------------------------------->" << endl;
+        cout << "<--------------------------------------------------->" << endl << "\n";
     }
 }
 

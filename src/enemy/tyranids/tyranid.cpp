@@ -12,7 +12,7 @@ void Tyranid::synapseLink(vector<Tyranid*>& tyranids) {
 
     for (auto& t : tyranids) {  // iterating over each item in tyranids vector
         if (t != this) {        // do not link to self
-            if (highest == nullptr || t->weightage >= highest->weightage) {
+            if ((highest == nullptr || t->weightage >= highest->weightage) && t->weightage >= this->weightage) {
                 highest = t;
             }
         }

@@ -12,7 +12,7 @@ void BattleEvents::Battle(Player& player, Enemy& enemy) {
     BattleStart(player, enemy);
 
     while (player.isAlive() && enemy.isAlive()) {
-        pEvents.PlayerOption(player, enemy);
+        pEvents.PlayerOptionOneEnemy(player, enemy);
         if (enemy.isAlive()) {
             player.takeDamage(enemy.getAttackDamage());
         } else {
@@ -23,34 +23,44 @@ void BattleEvents::Battle(Player& player, Enemy& enemy) {
 }
 
 // Tyranid swarm methods
-
 void BattleEvents::BattleMultipleTyranids(Player& player) {
     cout << "<------------------- GAME START ---------------->" << endl;
     auto enemies = eEvents.SpawnTyranidEnemies(player);
 
-    for (auto& en : enemies) {
-        if (!player.isAlive()) break;
+    // populating new vector to pass into function
+    vector<unique_ptr<Enemy>> enemyVector;
+    for (auto& ene : enemies) {
+        enemyVector.push_back(move(ene));
+    }
 
-        while(player.isAlive() && en->isAlive()) {
-            SelectTarget(player, enemies);
+    while(player.isAlive() && !enemyVector.empty()) {
+        pEvents.PlayerOptionMultEnemies(player, enemyVector);
 
-            for (auto& e : enemies) {
-                if (e->isAlive()) {
-                    e->synapseCheck();   // check if synapse source is not alive
-                    if (e->synapseCheck()) {
-                        cout << "Enemy falls to the ground, lifeless." << endl;
-                        player.calcEXP(e->onDeath());
-                    }
-                    else {
-                        player.takeDamage(e->getAttackDamage());
-                        cout << "Enemy attacks for " << e->getAttackDamage() << " damage!" << endl;
-                        cout << endl;
-                    }
+        for (auto& e : enemyVector) {
+            if (!e->isAlive()) {
+                player.calcEXP(e->onDeath());
+                continue;
+            };
+
+            if (Tyranid* t = dynamic_cast<Tyranid*>(e.get())) {
+                bool deadSynapse = t->synapseCheck();   // check if synapse source is not alive
+                if (deadSynapse) {
+                    cout << "\n" << t->getName() << " falls to the ground, lifeless." << endl;
+                    player.calcEXP(t->onDeath());
+                    continue;
                 }
-                else {
-                    cout << "Enemy falls to the ground, lifeless." << endl;
-                    player.calcEXP(e->onDeath());
-                }
+            }
+
+            player.takeDamage(e->getAttackDamage());
+            cout << e->getName() << " attacks for " << e->getAttackDamage() << " damage!" << endl << "\n";
+        }
+
+        for(auto it = enemyVector.begin(); it != enemyVector.end(); ) {
+            if(!(*it)->isAlive()) {
+                it = enemyVector.erase(it);
+            }
+            else {
+                ++it;
             }
         }
     }
